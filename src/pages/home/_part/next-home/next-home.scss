@@ -1,0 +1,128 @@
+.next-home {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+.swiper-container {
+  width: 771px;
+  height: 373px;
+  .el-carousel__container {
+    height: 373px;
+  }
+}
+.el-carousel__item .swiper-img {
+  width: 771px;
+  height: 373px;
+}
+.next-home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 72px 68px 72px 120px;
+  box-sizing: border-box;
+}
+.next-home-title {
+  text-align: center;
+  margin-bottom: 56px;
+  .next-home-title1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 12px;
+  }
+  .next-home-title2 {
+    opacity: 0.2;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 4px;
+  }
+}
+.next-home-swiper {
+  display: flex;
+  justify-content: space-between;
+  .next-home-swiper-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .next-home-swiper-left-title {
+      font-size: 56px;
+      margin-top: 24px;
+    }
+    .next-home-swiper-left-sub-title {
+      font-size: 20px;
+      opacity: 0.5;
+      min-height: 136px;
+      padding: 32px 0;
+      box-sizing: border-box;
+    }
+    .next-home-swiper-more {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      img {
+        height: 10px;
+        width: 40px;
+        margin-right: 22px;
+      }
+      span {
+        font-size: 16px;
+      }
+    }
+    .active-index {
+      opacity: 0.3;
+      font-size: 16px;
+    }
+  }
+  .next-home-swiper-right {
+    display: flex;
+    justify-content: flex-end;
+    .line-text {
+      width: 17px;
+      margin-left: 48px;
+      opacity: 0.3;
+      line-height: 30px;
+    }
+  }
+}
+.change-index-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  .change-index-left-ul {
+    display: flex;
+    cursor: pointer;
+    .change-index-left-li {
+      width: 22px;
+      height: 22px;
+      border: 1px solid transparent;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .change-index-left-dev {
+        width: 6px;
+        height: 6px;
+        background: #333;
+        border-radius: 50%;
+      }
+    }
+    .change-index-left-li-active {
+      border-color: #333;
+    }
+  }
+  .change-index-img {
+    display: flex;
+    padding-right: 65px;
+    img {
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+    }
+    .icon-prev {
+      margin-right: 40px;
+    }
+  }
+}

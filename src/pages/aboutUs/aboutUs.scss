@@ -1,0 +1,56 @@
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.about-us-bg-img {
+  width: 100%;
+}
+.about-us-title {
+  height: 100%;
+  position: relative;
+}
+.about-us-title-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: calc(100% - 143px);
+  padding: 0 93px 143px 120px;
+  width: calc(100% - 213px);
+  .about-us-title-box-bottom {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    align-items: center;
+  }
+  .about-us-title-box-bottom-left {
+    font-size: 48px;
+  }
+  .about-us-title-box-bottom-right {
+    font-size: 20px;
+    letter-spacing: 28.25px;
+  }
+}
+.about-us-title-box-top {
+  height: 96px;
+  border-bottom: 1px solid #fff;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  .main-logo {
+    height: 100%;
+    width: 280px;
+  }
+  .icon-meau {
+    width: 96px;
+    height: 96px;
+    cursor: pointer;
+  }
+}

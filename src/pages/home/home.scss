@@ -1,0 +1,16 @@
+.next-page-enter-active,
+.next-page-leave-active {
+  transition: opacity 0.5s;
+}
+.next-page-enter,
+.next-page-leave-to {
+  opacity: 0;
+}
+.prev-page-enter-active,
+.prev-page-leave-active {
+  transition: opacity 0.5s;
+}
+.prev-page-enter,
+.prev-page-leave-to {
+  opacity: 0;
+}
