@@ -1,7 +1,7 @@
 <template>
   <div class="about-us-container">
     <div class="about-us-title">
-      <img src="../../assets/images/swiper1.jpg" alt class="about-us-bg-img" />
+      <img src="../../assets/images/swiper2.jpg" alt class="about-us-bg-img" />
       <div class="about-us-title-box">
         <div class="about-us-title-box-top">
           <img class="main-logo" src="../../assets/icons/icon-logo-white.png" alt />
@@ -17,8 +17,8 @@
         </div>
         <div class="about-us-title-box-bottom">
           <div class="about-us-title-box-bottom-top">投资组合</div>
-          <div class="about-us-title-box-bottom-middle">东芯半导体</div>
-          <div class="about-us-title-box-bottom-bottom">目前国内唯一可以同时提供NAND</div>
+          <div class="about-us-title-box-bottom-middle">思泉新材</div>
+          <div class="about-us-title-box-bottom-bottom">思泉新材是一家专注于功能性高分子材料研发、生产、销售的国家高新技术企业</div>
         </div>
       </div>
     </div>
@@ -47,28 +47,22 @@
       <div class="investment-after-box">
         <div class="about-us-content-text" id="navigate1">
           <div class="about-us-content-text-top">
-            <img src="../../assets/images/investmentDetail/type1/10.png" alt="">
-            <div class="about-us-content-text-top-webside">www.dosilicon.com/</div>
+            <img src="../../assets/images/investmentDetail/type2/7.png" alt="">
+            <div class="about-us-content-text-top-webside">www.suqun-group.com</div>
           </div>
           <div class="about-us-content-text-bottom">
-            <div class="about-us-content-text-bottom-text">东芯半导体聚焦的是中小容量HAND、NOR的闪存芯片，是目前国内唯一可以同时提供NAND/NOR/DRAM设计工艺和产品方案的本土存储芯片研发设计公司。并于2015年收购韩国上市公司Fidelix（证券代码032580）。Fidelix系韩国第三大存储器生产厂商。</div>
-            <div class="about-us-content-text-bottom-img">
-              <img src="../../assets/images/investmentDetail/type7/6.jpg" alt="">
-            </div>
+            <div class="about-us-content-text-bottom-text">思泉新材是一家专注于功能性高分子材料研发、生产、销售的国家高新技术企业。思泉新材的产品涵盖导热材料、PCB板防护材料等业务领域，具备服务于军用、通讯、消费电子、机械制造、手持终端等行业的产品优势，持续为客户提供有竞争力的导热、防水全面解决方案。思泉新材2020年3月IPO工作已启动。</div>
           </div>
         </div>
         <div class="investment-after" id="navigate2">
           <div class="investment-after-title">投资方</div>
           <div class="investment-after-imgs">
-            <img src="../../assets/images/investmentDetail/type1/1.jpg" alt />
-            <img src="../../assets/images/investmentDetail/type1/2.jpg" alt />
-            <img src="../../assets/images/investmentDetail/type1/3.jpg" alt />
-            <img src="../../assets/images/investmentDetail/type1/4.jpg" alt />
-            <img src="../../assets/images/investmentDetail/type1/5.jpg" alt />
-            <img src="../../assets/images/investmentDetail/type1/6.jpg" alt />
-            <img src="../../assets/images/investmentDetail/type1/7.jpg" alt />
-            <img src="../../assets/images/investmentDetail/type1/8.jpg" alt />
-            <img src="../../assets/images/investmentDetail/type1/9.jpg" alt />
+            <img src="../../assets/images/investmentDetail/type2/1.jpg" alt />
+            <img src="../../assets/images/investmentDetail/type2/2.jpg" alt />
+            <img src="../../assets/images/investmentDetail/type2/3.jpg" alt />
+            <img src="../../assets/images/investmentDetail/type2/4.jpg" alt />
+            <img src="../../assets/images/investmentDetail/type2/5.jpg" alt />
+            <img src="../../assets/images/investmentDetail/type2/6.jpg" alt />
           </div>
           <div class="back-investment">
             <span @click="handleBackInvestment">回到投资组合</span>
@@ -82,8 +76,8 @@
       </div>
       <div class="administration-team-item-box">
         <div class="administration-team-item">
-          <img src="../../assets/images/swiper2.jpg" alt="">
-          <div class="administration-team-item-float">思泉新材</div>
+          <img src="../../assets/images/swiper1.jpg" alt="">
+          <div class="administration-team-item-float">东芯半导体</div>
         </div>
         <div class="administration-team-item">
           <img src="../../assets/images/swiper3.jpg" alt="">

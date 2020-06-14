@@ -1,7 +1,7 @@
 <template>
   <div class="about-us-container">
     <div class="about-us-title">
-      <img src="../../assets/images/swiper1.jpg" alt class="about-us-bg-img" />
+      <img src="../../assets/images/swiper4.jpg" alt class="about-us-bg-img" />
       <div class="about-us-title-box">
         <div class="about-us-title-box-top">
           <img class="main-logo" src="../../assets/icons/icon-logo-white.png" alt />
@@ -17,8 +17,8 @@
         </div>
         <div class="about-us-title-box-bottom">
           <div class="about-us-title-box-bottom-top">投资组合</div>
-          <div class="about-us-title-box-bottom-middle">东芯半导体</div>
-          <div class="about-us-title-box-bottom-bottom">目前国内唯一可以同时提供NAND</div>
+          <div class="about-us-title-box-bottom-middle">猛犸电动</div>
+          <div class="about-us-title-box-bottom-bottom">猛犸电动是智慧出行解决方案的提供商</div>
         </div>
       </div>
     </div>
@@ -47,28 +47,19 @@
       <div class="investment-after-box">
         <div class="about-us-content-text" id="navigate1">
           <div class="about-us-content-text-top">
-            <img src="../../assets/images/investmentDetail/type1/10.png" alt="">
-            <div class="about-us-content-text-top-webside">www.dosilicon.com/</div>
+            <img src="../../assets/images/investmentDetail/type4/4.png" alt="">
+            <div class="about-us-content-text-top-webside">www.mambike.com</div>
           </div>
           <div class="about-us-content-text-bottom">
-            <div class="about-us-content-text-bottom-text">东芯半导体聚焦的是中小容量HAND、NOR的闪存芯片，是目前国内唯一可以同时提供NAND/NOR/DRAM设计工艺和产品方案的本土存储芯片研发设计公司。并于2015年收购韩国上市公司Fidelix（证券代码032580）。Fidelix系韩国第三大存储器生产厂商。</div>
-            <div class="about-us-content-text-bottom-img">
-              <img src="../../assets/images/investmentDetail/type7/6.jpg" alt="">
-            </div>
+            <div class="about-us-content-text-bottom-text">猛犸电动是智慧出行解决方案的提供商，专注于3亿两轮电动车出行市场。产品方案：涵盖车+电池+充换电一 体化解决方案，拥有70%为研发人员的团队架构，从而建立了以物联网、大数据和人工智能为核心技术的硬核产品壁垒及供应链竞争力。同时，全新的体验式销售和互联网营销，结合信贷金融和数据化赋能电动车营销市场， 开创电动车新零售和新纪元。</div>
           </div>
         </div>
         <div class="investment-after" id="navigate2">
           <div class="investment-after-title">投资方</div>
           <div class="investment-after-imgs">
-            <img src="../../assets/images/investmentDetail/type1/1.jpg" alt />
-            <img src="../../assets/images/investmentDetail/type1/2.jpg" alt />
-            <img src="../../assets/images/investmentDetail/type1/3.jpg" alt />
-            <img src="../../assets/images/investmentDetail/type1/4.jpg" alt />
-            <img src="../../assets/images/investmentDetail/type1/5.jpg" alt />
-            <img src="../../assets/images/investmentDetail/type1/6.jpg" alt />
-            <img src="../../assets/images/investmentDetail/type1/7.jpg" alt />
-            <img src="../../assets/images/investmentDetail/type1/8.jpg" alt />
-            <img src="../../assets/images/investmentDetail/type1/9.jpg" alt />
+            <img src="../../assets/images/investmentDetail/type4/1.jpg" alt />
+            <img src="../../assets/images/investmentDetail/type4/2.jpg" alt />
+            <img src="../../assets/images/investmentDetail/type4/3.jpg" alt />
           </div>
           <div class="back-investment">
             <span @click="handleBackInvestment">回到投资组合</span>
@@ -82,16 +73,16 @@
       </div>
       <div class="administration-team-item-box">
         <div class="administration-team-item">
+          <img src="../../assets/images/swiper1.jpg" alt="">
+          <div class="administration-team-item-float">东芯半导体</div>
+        </div>
+        <div class="administration-team-item">
           <img src="../../assets/images/swiper2.jpg" alt="">
           <div class="administration-team-item-float">思泉新材</div>
         </div>
         <div class="administration-team-item">
           <img src="../../assets/images/swiper3.jpg" alt="">
           <div class="administration-team-item-float">什马出行</div>
-        </div>
-        <div class="administration-team-item">
-          <img src="../../assets/images/swiper4.jpg" alt="">
-          <div class="administration-team-item-float">猛犸电动</div>
         </div>
         <div class="administration-team-item">
           <img src="../../assets/images/swiper5.jpg" alt="">

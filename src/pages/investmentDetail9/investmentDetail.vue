@@ -1,7 +1,7 @@
 <template>
   <div class="about-us-container">
     <div class="about-us-title">
-      <img src="../../assets/images/swiper1.jpg" alt class="about-us-bg-img" />
+      <img src="../../assets/images/swiper9.jpg" alt class="about-us-bg-img" />
       <div class="about-us-title-box">
         <div class="about-us-title-box-top">
           <img class="main-logo" src="../../assets/icons/icon-logo-white.png" alt />
@@ -17,8 +17,8 @@
         </div>
         <div class="about-us-title-box-bottom">
           <div class="about-us-title-box-bottom-top">投资组合</div>
-          <div class="about-us-title-box-bottom-middle">东芯半导体</div>
-          <div class="about-us-title-box-bottom-bottom">目前国内唯一可以同时提供NAND</div>
+          <div class="about-us-title-box-bottom-middle">芯原微电子</div>
+          <div class="about-us-title-box-bottom-bottom">亚太地区领先的芯片设计和集成电路生产服务企业</div>
         </div>
       </div>
     </div>
@@ -35,41 +35,20 @@
             <span class="about-us-anchor-div-text" v-show="activeIndex === 2">简介</span>
           </div>
         </li>
-        <li @click="goAnchor(3)">
-          <div class="about-us-anchor-div1">
-            <div :class="{'li-active': activeIndex === 3}" class="about-us-anchor-div-maodian"><span></span></div>
-            <span class="about-us-anchor-div-text" v-show="activeIndex === 3">合作</span>
-          </div>
-        </li>
       </ul>
     </div>
     <div class="about-us-container-content">
       <div class="investment-after-box">
         <div class="about-us-content-text" id="navigate1">
           <div class="about-us-content-text-top">
-            <img src="../../assets/images/investmentDetail/type1/10.png" alt="">
-            <div class="about-us-content-text-top-webside">www.dosilicon.com/</div>
+            <img src="../../assets/images/investmentDetail/type9/1.png" alt="">
+            <div class="about-us-content-text-top-webside">www.chaojixinxi.com</div>
           </div>
           <div class="about-us-content-text-bottom">
-            <div class="about-us-content-text-bottom-text">东芯半导体聚焦的是中小容量HAND、NOR的闪存芯片，是目前国内唯一可以同时提供NAND/NOR/DRAM设计工艺和产品方案的本土存储芯片研发设计公司。并于2015年收购韩国上市公司Fidelix（证券代码032580）。Fidelix系韩国第三大存储器生产厂商。</div>
-            <div class="about-us-content-text-bottom-img">
-              <img src="../../assets/images/investmentDetail/type7/6.jpg" alt="">
-            </div>
+            <div class="about-us-content-text-bottom-text">亚太地区领先的芯片设计和集成电路生产服务企业。在国内拥有无可比拟的IP数量，为我国电子产业的发展做出过重要贡献。公司已为Bosch、Google等世界知名企业设计并生产超过10亿颗芯片</div>
           </div>
         </div>
         <div class="investment-after" id="navigate2">
-          <div class="investment-after-title">投资方</div>
-          <div class="investment-after-imgs">
-            <img src="../../assets/images/investmentDetail/type1/1.jpg" alt />
-            <img src="../../assets/images/investmentDetail/type1/2.jpg" alt />
-            <img src="../../assets/images/investmentDetail/type1/3.jpg" alt />
-            <img src="../../assets/images/investmentDetail/type1/4.jpg" alt />
-            <img src="../../assets/images/investmentDetail/type1/5.jpg" alt />
-            <img src="../../assets/images/investmentDetail/type1/6.jpg" alt />
-            <img src="../../assets/images/investmentDetail/type1/7.jpg" alt />
-            <img src="../../assets/images/investmentDetail/type1/8.jpg" alt />
-            <img src="../../assets/images/investmentDetail/type1/9.jpg" alt />
-          </div>
           <div class="back-investment">
             <span @click="handleBackInvestment">回到投资组合</span>
           </div>
@@ -81,6 +60,10 @@
         <img src="../../assets/icons/icon-prev-white.png" alt="" class="administration-team-left-img">
       </div>
       <div class="administration-team-item-box">
+        <div class="administration-team-item">
+          <img src="../../assets/images/swiper1.jpg" alt="">
+          <div class="administration-team-item-float">东芯半导体</div>
+        </div>
         <div class="administration-team-item">
           <img src="../../assets/images/swiper2.jpg" alt="">
           <div class="administration-team-item-float">思泉新材</div>
@@ -108,10 +91,6 @@
         <div class="administration-team-item">
           <img src="../../assets/images/swiper8.jpg" alt="">
           <div class="administration-team-item-float">太和水生态</div>
-        </div>
-        <div class="administration-team-item">
-          <img src="../../assets/images/swiper9.jpg" alt="">
-          <div class="administration-team-item-float">芯原微电子</div>
         </div>
       </div>
       <div class="icon-next-box" @click="handleNextSwiper">
@@ -151,11 +130,8 @@ export default {
       if (scrollTop < navigate1) {
         this.activeIndex = 1;
       }
-      if (scrollTop > navigate1) {
-        this.activeIndex = 2;
-      }
       if (scrollTop + windowHeight >= scrollHeight - 5) {
-        this.activeIndex = 3;
+        this.activeIndex = 2;
       }
     },
     goAnchor(type) {

@@ -120,9 +120,15 @@ export default {
       this.$refs.carousel.setActiveItem(index - 1);
     },
     handleKnowMore() {
-      this.$router.push({
-        name: 'investmentDetail'
-      })
+      if (this.activeIndex === 1) {
+        this.$router.push({
+          name: 'investmentDetail'
+        })
+      }else {
+        this.$router.push({
+          name: 'investmentDetail' + this.activeIndex
+        })
+      }
     }
   },
   mounted() {

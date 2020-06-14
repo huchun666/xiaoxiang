@@ -1,7 +1,7 @@
 <template>
   <div class="about-us-container">
     <div class="about-us-title">
-      <img src="../../assets/images/swiper1.jpg" alt class="about-us-bg-img" />
+      <img src="../../assets/images/swiper3.jpg" alt class="about-us-bg-img" />
       <div class="about-us-title-box">
         <div class="about-us-title-box-top">
           <img class="main-logo" src="../../assets/icons/icon-logo-white.png" alt />
@@ -17,8 +17,8 @@
         </div>
         <div class="about-us-title-box-bottom">
           <div class="about-us-title-box-bottom-top">投资组合</div>
-          <div class="about-us-title-box-bottom-middle">东芯半导体</div>
-          <div class="about-us-title-box-bottom-bottom">目前国内唯一可以同时提供NAND</div>
+          <div class="about-us-title-box-bottom-middle">什马出行</div>
+          <div class="about-us-title-box-bottom-bottom">聚焦新能源汽车流通领域的产业互联网平台</div>
         </div>
       </div>
     </div>
@@ -47,28 +47,23 @@
       <div class="investment-after-box">
         <div class="about-us-content-text" id="navigate1">
           <div class="about-us-content-text-top">
-            <img src="../../assets/images/investmentDetail/type1/10.png" alt="">
-            <div class="about-us-content-text-top-webside">www.dosilicon.com/</div>
+            <img src="../../assets/images/investmentDetail/type3/8.png" alt="">
+            <div class="about-us-content-text-top-webside">www.shenmachuxing.com</div>
           </div>
           <div class="about-us-content-text-bottom">
-            <div class="about-us-content-text-bottom-text">东芯半导体聚焦的是中小容量HAND、NOR的闪存芯片，是目前国内唯一可以同时提供NAND/NOR/DRAM设计工艺和产品方案的本土存储芯片研发设计公司。并于2015年收购韩国上市公司Fidelix（证券代码032580）。Fidelix系韩国第三大存储器生产厂商。</div>
-            <div class="about-us-content-text-bottom-img">
-              <img src="../../assets/images/investmentDetail/type7/6.jpg" alt="">
-            </div>
+            <div class="about-us-content-text-bottom-text">什马出行聚焦新能源汽车流通领域的产业互联网平台，专注服务3-6线城市个人出行需求人群，通过塑造OMO（线上融合线下）分销网络体系，辅以互联网+的平台化赋能，提供“生产-交易-金融-仓储-物流-售后”的全渠道产业链条和用户车生命全周期服务，推动新能源产业流通领域科技化、消费化、服务化，让8亿人出行更美好。 </div>
           </div>
         </div>
         <div class="investment-after" id="navigate2">
           <div class="investment-after-title">投资方</div>
           <div class="investment-after-imgs">
-            <img src="../../assets/images/investmentDetail/type1/1.jpg" alt />
-            <img src="../../assets/images/investmentDetail/type1/2.jpg" alt />
-            <img src="../../assets/images/investmentDetail/type1/3.jpg" alt />
-            <img src="../../assets/images/investmentDetail/type1/4.jpg" alt />
-            <img src="../../assets/images/investmentDetail/type1/5.jpg" alt />
-            <img src="../../assets/images/investmentDetail/type1/6.jpg" alt />
-            <img src="../../assets/images/investmentDetail/type1/7.jpg" alt />
-            <img src="../../assets/images/investmentDetail/type1/8.jpg" alt />
-            <img src="../../assets/images/investmentDetail/type1/9.jpg" alt />
+            <img src="../../assets/images/investmentDetail/type3/1.jpg" alt />
+            <img src="../../assets/images/investmentDetail/type3/2.jpg" alt />
+            <img src="../../assets/images/investmentDetail/type3/3.jpg" alt />
+            <img src="../../assets/images/investmentDetail/type3/4.jpg" alt />
+            <img src="../../assets/images/investmentDetail/type3/5.jpg" alt />
+            <img src="../../assets/images/investmentDetail/type3/6.jpg" alt />
+            <img src="../../assets/images/investmentDetail/type3/7.jpg" alt />
           </div>
           <div class="back-investment">
             <span @click="handleBackInvestment">回到投资组合</span>
@@ -82,12 +77,12 @@
       </div>
       <div class="administration-team-item-box">
         <div class="administration-team-item">
-          <img src="../../assets/images/swiper2.jpg" alt="">
-          <div class="administration-team-item-float">思泉新材</div>
+          <img src="../../assets/images/swiper1.jpg" alt="">
+          <div class="administration-team-item-float">东芯半导体</div>
         </div>
         <div class="administration-team-item">
-          <img src="../../assets/images/swiper3.jpg" alt="">
-          <div class="administration-team-item-float">什马出行</div>
+          <img src="../../assets/images/swiper2.jpg" alt="">
+          <div class="administration-team-item-float">思泉新材</div>
         </div>
         <div class="administration-team-item">
           <img src="../../assets/images/swiper4.jpg" alt="">

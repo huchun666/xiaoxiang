@@ -10,7 +10,7 @@
           </div>
           <div class="investment-img-box">
             <div class="investment-img-li-box">
-              <div class="investment-img-li" @click="handleDetail(1)">
+              <div class="investment-img-li" @click="handleDetail('')">
                 <img src="../../assets/images/investment/i1.png" alt="" class="investment-img">
                 <img src="../../assets/images/investment/i1-active.png" alt="" class="investment-img-active">
                 <div class="look-case">
@@ -18,7 +18,7 @@
                   <span class="look-case-text">查看案例</span>
                 </div>
               </div>
-              <div class="investment-img-li">
+              <div class="investment-img-li" @click="handleDetail('2')">
                 <img src="../../assets/images/investment/i2.png" alt="" class="investment-img">
                 <img src="../../assets/images/investment/i2-active.png" alt="" class="investment-img-active">
                 <div class="look-case">
@@ -26,7 +26,7 @@
                   <span class="look-case-text">查看案例</span>
                 </div>
               </div>
-              <div class="investment-img-li">
+              <div class="investment-img-li" @click="handleDetail('3')">
                 <img src="../../assets/images/investment/i3.png" alt="" class="investment-img">
                 <img src="../../assets/images/investment/i3-active.png" alt="" class="investment-img-active">
                 <div class="look-case">
@@ -36,7 +36,7 @@
               </div>
             </div>
             <div class="investment-img-li-box">
-              <div class="investment-img-li">
+              <div class="investment-img-li" @click="handleDetail('4')">
                 <img src="../../assets/images/investment/i4.png" alt="" class="investment-img">
                 <img src="../../assets/images/investment/i4-active.png" alt="" class="investment-img-active">
                 <div class="look-case">
@@ -44,7 +44,7 @@
                   <span class="look-case-text">查看案例</span>
                 </div>
               </div>
-              <div class="investment-img-li">
+              <div class="investment-img-li" @click="handleDetail('5')">
                 <img src="../../assets/images/investment/i5.png" alt="" class="investment-img">
                 <img src="../../assets/images/investment/i5-active.png" alt="" class="investment-img-active">
                 <div class="look-case">
@@ -52,7 +52,7 @@
                   <span class="look-case-text">查看案例</span>
                 </div>
               </div>
-              <div class="investment-img-li">
+              <div class="investment-img-li" @click="handleDetail('6')">
                 <img src="../../assets/images/investment/i6.png" alt="" class="investment-img">
                 <img src="../../assets/images/investment/i6-active.png" alt="" class="investment-img-active">
                 <div class="look-case">
@@ -62,7 +62,7 @@
               </div>
             </div>
             <div class="investment-img-li-box">
-              <div class="investment-img-li">
+              <div class="investment-img-li" @click="handleDetail('7')">
                 <img src="../../assets/images/investment/i7.png" alt="" class="investment-img">
                 <img src="../../assets/images/investment/i7-active.png" alt="" class="investment-img-active">
                 <div class="look-case">
@@ -70,7 +70,7 @@
                   <span class="look-case-text">查看案例</span>
                 </div>
               </div>
-              <div class="investment-img-li">
+              <div class="investment-img-li" @click="handleDetail('8')">
                 <img src="../../assets/images/investment/i8.png" alt="" class="investment-img">
                 <img src="../../assets/images/investment/i8-active.png" alt="" class="investment-img-active">
                 <div class="look-case">
@@ -78,7 +78,7 @@
                   <span class="look-case-text">查看案例</span>
                 </div>
               </div>
-              <div class="investment-img-li">
+              <div class="investment-img-li" @click="handleDetail('9')">
                 <img src="../../assets/images/investment/i9.png" alt="" class="investment-img">
                 <img src="../../assets/images/investment/i9-active.png" alt="" class="investment-img-active">
                 <div class="look-case">
@@ -106,8 +106,7 @@ export default {
   },
   methods: {
     handleDetail(type) {
-      console.log(type)
-      this.$router.push({name: 'investmentDetail'})
+      this.$router.push({name: 'investmentDetail' + type})
     }
   },
   mounted() {

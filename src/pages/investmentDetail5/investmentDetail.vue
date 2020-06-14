@@ -1,7 +1,7 @@
 <template>
   <div class="about-us-container">
     <div class="about-us-title">
-      <img src="../../assets/images/swiper1.jpg" alt class="about-us-bg-img" />
+      <img src="../../assets/images/swiper5.jpg" alt class="about-us-bg-img" />
       <div class="about-us-title-box">
         <div class="about-us-title-box-top">
           <img class="main-logo" src="../../assets/icons/icon-logo-white.png" alt />
@@ -17,8 +17,8 @@
         </div>
         <div class="about-us-title-box-bottom">
           <div class="about-us-title-box-bottom-top">投资组合</div>
-          <div class="about-us-title-box-bottom-middle">东芯半导体</div>
-          <div class="about-us-title-box-bottom-bottom">目前国内唯一可以同时提供NAND</div>
+          <div class="about-us-title-box-bottom-middle">感图科技</div>
+          <div class="about-us-title-box-bottom-bottom">基于深度学习的计算机视觉技术和大数据技术为核心，其软硬件一体的AI产线缺陷智能识别解决方案</div>
         </div>
       </div>
     </div>
@@ -47,28 +47,23 @@
       <div class="investment-after-box">
         <div class="about-us-content-text" id="navigate1">
           <div class="about-us-content-text-top">
-            <img src="../../assets/images/investmentDetail/type1/10.png" alt="">
-            <div class="about-us-content-text-top-webside">www.dosilicon.com/</div>
+            <img src="../../assets/images/investmentDetail/type5/8.png" alt="">
+            <div class="about-us-content-text-top-webside">www.gantuai.com</div>
           </div>
           <div class="about-us-content-text-bottom">
-            <div class="about-us-content-text-bottom-text">东芯半导体聚焦的是中小容量HAND、NOR的闪存芯片，是目前国内唯一可以同时提供NAND/NOR/DRAM设计工艺和产品方案的本土存储芯片研发设计公司。并于2015年收购韩国上市公司Fidelix（证券代码032580）。Fidelix系韩国第三大存储器生产厂商。</div>
-            <div class="about-us-content-text-bottom-img">
-              <img src="../../assets/images/investmentDetail/type7/6.jpg" alt="">
-            </div>
+            <div class="about-us-content-text-bottom-text">感图科技以基于深度学习的计算机视觉技术和大数据技术为核心，其软硬件一体的AI产线缺陷智能识别解决方案已应用在SMT、汽车零部件等产线上，同时正通过自有技术打通数据闭环收集各类产线数据，构建产线知识库，未来将挖掘产线数据价值，辅助管理及优化决策。</div>
           </div>
         </div>
         <div class="investment-after" id="navigate2">
           <div class="investment-after-title">投资方</div>
           <div class="investment-after-imgs">
-            <img src="../../assets/images/investmentDetail/type1/1.jpg" alt />
-            <img src="../../assets/images/investmentDetail/type1/2.jpg" alt />
-            <img src="../../assets/images/investmentDetail/type1/3.jpg" alt />
-            <img src="../../assets/images/investmentDetail/type1/4.jpg" alt />
-            <img src="../../assets/images/investmentDetail/type1/5.jpg" alt />
-            <img src="../../assets/images/investmentDetail/type1/6.jpg" alt />
-            <img src="../../assets/images/investmentDetail/type1/7.jpg" alt />
-            <img src="../../assets/images/investmentDetail/type1/8.jpg" alt />
-            <img src="../../assets/images/investmentDetail/type1/9.jpg" alt />
+            <img src="../../assets/images/investmentDetail/type5/1.jpg" alt />
+            <img src="../../assets/images/investmentDetail/type5/2.jpg" alt />
+            <img src="../../assets/images/investmentDetail/type5/3.jpg" alt />
+            <img src="../../assets/images/investmentDetail/type5/4.jpg" alt />
+            <img src="../../assets/images/investmentDetail/type5/5.jpg" alt />
+            <img src="../../assets/images/investmentDetail/type5/6.jpg" alt />
+            <img src="../../assets/images/investmentDetail/type5/7.jpg" alt />
           </div>
           <div class="back-investment">
             <span @click="handleBackInvestment">回到投资组合</span>
@@ -82,6 +77,10 @@
       </div>
       <div class="administration-team-item-box">
         <div class="administration-team-item">
+          <img src="../../assets/images/swiper1.jpg" alt="">
+          <div class="administration-team-item-float">东芯半导体</div>
+        </div>
+        <div class="administration-team-item">
           <img src="../../assets/images/swiper2.jpg" alt="">
           <div class="administration-team-item-float">思泉新材</div>
         </div>
@@ -92,10 +91,6 @@
         <div class="administration-team-item">
           <img src="../../assets/images/swiper4.jpg" alt="">
           <div class="administration-team-item-float">猛犸电动</div>
-        </div>
-        <div class="administration-team-item">
-          <img src="../../assets/images/swiper5.jpg" alt="">
-          <div class="administration-team-item-float">感图科技</div>
         </div>
         <div class="administration-team-item">
           <img src="../../assets/images/swiper6.jpg" alt="">
