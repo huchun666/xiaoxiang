@@ -11,7 +11,7 @@
             <div>
               <div class="next-home-swiper-left-title">{{activeIndex | swiperTitleFilter}}</div>
               <div class="next-home-swiper-left-sub-title">{{activeIndex | swiperSubTitleFilter}}</div>
-              <div class="next-home-swiper-more">
+              <div class="next-home-swiper-more" @click="handleKnowMore">
                 <img
                   src="../../../../assets/icons/icon-know-more.png"
                   alt
@@ -118,6 +118,11 @@ export default {
     },
     handleActiveIndex(index) {
       this.$refs.carousel.setActiveItem(index - 1);
+    },
+    handleKnowMore() {
+      this.$router.push({
+        name: 'investmentDetail'
+      })
     }
   },
   mounted() {

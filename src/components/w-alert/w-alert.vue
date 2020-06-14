@@ -44,7 +44,20 @@ export default {
        }
     },
     created() {
-
+        let routeName = this.$route.name;
+        if (routeName === 'home') {
+            this.activeIndex = 0;
+        }else if (routeName === 'aboutUs') {
+            this.activeIndex = 1;
+        }else if (routeName === 'coreTeam') {
+            this.activeIndex = 2;
+        }else if (routeName === 'investment') {
+            this.activeIndex = 3;
+        }else if (routeName === 'cooperation') {
+            this.activeIndex = 4;
+        }else if (routeName === 'investmentDetail') {
+            this.activeIndex = 3;
+        }
     },
     methods: {
         handleSelectTab(index) {
@@ -57,6 +70,18 @@ export default {
                 }else if(index === 1) {
                     this.$router.push({
                         name: 'aboutUs'
+                    })
+                }else if(index === 2) {
+                    this.$router.push({
+                        name: 'coreTeam'
+                    })
+                }else if(index === 3) {
+                    this.$router.push({
+                        name: 'investment'
+                    })
+                }else if(index === 4) {
+                    this.$router.push({
+                        name: 'cooperation'
                     })
                 }
                 this.$emit('hiddenMeau')

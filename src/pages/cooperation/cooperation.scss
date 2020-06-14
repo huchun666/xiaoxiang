@@ -1,0 +1,123 @@
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.about-us-bg-img {
+  width: 100%;
+}
+.about-us-title {
+  height: 100%;
+  position: relative;
+}
+.about-us-title-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: calc(100% - 143px);
+  padding: 0 93px 143px 120px;
+  width: calc(100% - 213px);
+  .about-us-title-box-bottom {
+    color: #fff;
+    align-items: center;
+  }
+  .about-us-title-box-bottom-left {
+    font-size: 48px;
+  }
+  .about-us-title-box-bottom-right {
+    font-size: 20px;
+    letter-spacing: 28.25px;
+  }
+}
+.about-us-title-box-top {
+  height: 96px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  .main-logo {
+    height: 100%;
+    width: 280px;
+  }
+  .icon-meau {
+    width: 96px;
+    height: 96px;
+    cursor: pointer;
+  }
+}
+.cooperation-img-list {
+  display: flex;
+  flex-direction: column;
+  .cooperation-img-list-box {
+    display: flex;
+    justify-content: center;
+    img {
+      width: 494px;
+      margin-right: 8px;
+      margin-bottom: 8px;
+    }
+    img:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+  .cooperation-img-list-box-container1 {
+    border-top: 1px solid #ddd;
+    padding-top: 60px;
+  }
+}
+.cooperation-title {
+  padding: 96px 0 40px;
+  display: flex;
+  justify-content: center;
+  .cooperation-title-box {
+    width: 996px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .cooperation-title-left {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .cooperation-title-right {
+    opacity: 0.2;
+    font-size: 16px;
+    letter-spacing: 4px;
+    font-weight: bold;
+  }
+}
+.cooperation-and {
+  display: flex;
+  justify-content: center;
+  margin-top: 55px;
+  .cooperation-and-box {
+    width: 780px;
+    border-bottom: 4px solid #eee;
+    padding-bottom: 80px;
+  }
+  .cooperation-and-img {
+    display: flex;
+    justify-content: center;
+    img {
+      width: 500px;
+    }
+  }
+  .cooperation-and-text {
+    line-height: 32px;
+    font-size: 16px;
+  }
+}
+.cooperation-and:last-child {
+  .cooperation-and-box {
+    border-bottom: 0;
+  }
+}
+.w-footer {
+  position: static;
+}
