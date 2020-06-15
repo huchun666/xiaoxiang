@@ -1,7 +1,11 @@
 .investment-box {
-  position: relative;
+  // position: relative;
   height: 100%;
   width: 100%;
+  background-image: url('../../assets/images/bg-logo.png');
+  background-size: 450px 600px;
+  background-repeat: no-repeat;
+  background-position: center;
   .investment-bg-logo {
     width: 538px;
     position: absolute;
@@ -10,9 +14,9 @@
     transform: translateX(-50%);
   }
   .investment-container {
-    position: absolute;
-    left: 0;
-    top: 0;
+    // position: absolute;
+    // left: 0;
+    // top: 0;
     width: 100%;
     height: 100%;
     display: flex;
@@ -20,7 +24,7 @@
     justify-content: space-around;
     .investment-title {
       text-align: center;
-      margin-top: 40px;
+      margin-top: 96px;
       .investment-title-top {
         font-size: 30px;
         font-weight: bold;
@@ -29,6 +33,7 @@
       .investment-title-bottom {
         font-size: 16px;
         opacity: 0.2;
+        margin-bottom: 70px;
       }
     }
     .investment-img-box {

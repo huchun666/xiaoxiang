@@ -2,7 +2,7 @@
   <div class=''>
     <w-page>
       <div class="investment-box">
-        <img src="../../assets/images/bg-logo.png" alt="" class="investment-bg-logo">
+        <!-- <img src="../../assets/images/bg-logo.png" alt="" class="investment-bg-logo"> -->
         <div class="investment-container">
           <div class="investment-title">
             <div class="investment-title-top">投资组合</div>

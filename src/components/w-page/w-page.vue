@@ -28,8 +28,11 @@ export default {
 </script>
 
 <style scoped lang='scss'>
-.content {
-    height: calc(100vh - 258px);
-    margin-top: 96px;
+// .content {
+//     height: calc(100vh - 258px);
+//     margin-top: 96px;
+// }
+.w-title, .w-footer {
+    position: static;
 }
 </style>

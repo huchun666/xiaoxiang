@@ -60,35 +60,35 @@
         <img src="../../assets/icons/icon-prev-white.png" alt="" class="administration-team-left-img">
       </div>
       <div class="administration-team-item-box">
-        <div class="administration-team-item">
+        <div class="administration-team-item" @click="handleDetail('')">
           <img src="../../assets/images/swiper1.jpg" alt="">
           <div class="administration-team-item-float">东芯半导体</div>
         </div>
-        <div class="administration-team-item">
+        <div class="administration-team-item" @click="handleDetail(2)">
           <img src="../../assets/images/swiper2.jpg" alt="">
           <div class="administration-team-item-float">思泉新材</div>
         </div>
-        <div class="administration-team-item">
+        <div class="administration-team-item" @click="handleDetail(3)">
           <img src="../../assets/images/swiper3.jpg" alt="">
           <div class="administration-team-item-float">什马出行</div>
         </div>
-        <div class="administration-team-item">
+        <div class="administration-team-item" @click="handleDetail(4)">
           <img src="../../assets/images/swiper4.jpg" alt="">
           <div class="administration-team-item-float">猛犸电动</div>
         </div>
-        <div class="administration-team-item">
+        <div class="administration-team-item" @click="handleDetail(5)">
           <img src="../../assets/images/swiper5.jpg" alt="">
           <div class="administration-team-item-float">感图科技</div>
         </div>
-        <div class="administration-team-item">
+        <div class="administration-team-item" @click="handleDetail(6)">
           <img src="../../assets/images/swiper6.jpg" alt="">
           <div class="administration-team-item-float">联空网络</div>
         </div>
-        <div class="administration-team-item">
+        <div class="administration-team-item" @click="handleDetail(7)">
           <img src="../../assets/images/swiper7.jpg" alt="">
           <div class="administration-team-item-float">爱乐达</div>
         </div>
-        <div class="administration-team-item">
+        <div class="administration-team-item" @click="handleDetail(9)">
           <img src="../../assets/images/swiper9.jpg" alt="">
           <div class="administration-team-item-float">芯原微电子</div>
         </div>
@@ -158,6 +158,9 @@ export default {
       this.scrollLeftPX += 960;
       $('.administration-team-item-box').animate({scrollLeft: this.scrollLeftPX}, 1000)
     },
+    handleDetail(type) {
+      this.$router.push({name: 'investmentDetail'+type})
+    }
   },
   mounted() {
     window.addEventListener("scroll", this.handleScroll, true);
