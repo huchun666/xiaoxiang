@@ -4,7 +4,7 @@
       <img src="../../assets/images/swiper5.jpg" alt class="about-us-bg-img" />
       <div class="about-us-title-box">
         <div class="about-us-title-box-top">
-          <img class="main-logo" src="../../assets/icons/icon-logo-white.png" alt />
+          <img class="main-logo" src="../../assets/icons/icon-logo-white.png" alt @click="handleGoHome"/>
           <img
             class="icon-meau"
             src="../../assets/icons/icon-meau-white.png"
@@ -48,7 +48,9 @@
         <div class="about-us-content-text" id="navigate1">
           <div class="about-us-content-text-top">
             <img src="../../assets/images/investmentDetail/type5/8.png" alt="">
-            <div class="about-us-content-text-top-webside">www.gantuai.com</div>
+            <div class="about-us-content-text-top-webside">
+              <a target="_blank" href="http://www.gantuai.com">www.gantuai.com</a>
+            </div>
           </div>
           <div class="about-us-content-text-bottom">
             <div class="about-us-content-text-bottom-text">感图科技以基于深度学习的计算机视觉技术和大数据技术为核心，其软硬件一体的AI产线缺陷智能识别解决方案已应用在SMT、汽车零部件等产线上，同时正通过自有技术打通数据闭环收集各类产线数据，构建产线知识库，未来将挖掘产线数据价值，辅助管理及优化决策。</div>
@@ -179,9 +181,15 @@ export default {
     },
     handleDetail(type) {
       this.$router.push({name: 'investmentDetail'+type})
+    },
+    handleGoHome() {
+      if (this.$route.name !== 'home') {
+          this.$router.push({name: 'home'})
+      }
     }
   },
   mounted() {
+    $('html, body').animate({scrollTop: 0}, 500);
     window.addEventListener("scroll", this.handleScroll, true);
   }
 };

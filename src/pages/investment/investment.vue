@@ -2,7 +2,6 @@
   <div class=''>
     <w-page>
       <div class="investment-box">
-        <!-- <img src="../../assets/images/bg-logo.png" alt="" class="investment-bg-logo"> -->
         <div class="investment-container">
           <div class="investment-title">
             <div class="investment-title-top">投资组合</div>
@@ -95,6 +94,7 @@
 </template>
 
 <script>
+import $ from "jquery";
 export default {
   data() {
     return {
@@ -110,7 +110,7 @@ export default {
     }
   },
   mounted() {
-
+    $('html, body').animate({scrollTop: 0}, 500);
   }
 }
 </script>

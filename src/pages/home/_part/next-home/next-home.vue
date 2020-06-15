@@ -79,12 +79,15 @@
               src="../../../../assets/icons/icon-prev.png"
               alt
               class="icon-prev"
+              :class="{'icon-prev-disabled': activeIndex === 1}"
               @click="handlePrev"
             />
+            <div class="change-index-img-line"></div>
             <img
               src="../../../../assets/icons/icon-next.png"
               alt
               class="icon-next"
+              :class="{'icon-prev-disabled': activeIndex === 9}"
               @click="handleNext"
             />
           </div>
@@ -111,10 +114,14 @@ export default {
       this.activeIndex = index + 1;
     },
     handlePrev() {
-      this.$refs.carousel.prev();
+      if (this.activeIndex > 1) {
+        this.$refs.carousel.prev();
+      }
     },
     handleNext() {
-      this.$refs.carousel.next();
+      if (this.activeIndex < 9) {
+        this.$refs.carousel.next();
+      }
     },
     handleActiveIndex(index) {
       this.$refs.carousel.setActiveItem(index - 1);
@@ -190,7 +197,7 @@ export default {
           text = "通过一站式就医聚合支付SaaS平台，再造移动互联时代的线上线下就医流程";
           break;
         case 7:
-          text = "公司主要为飞机提供部件制造";
+          text = "公司主要为飞机提供零部件制造";
           break;
         case 8:
           text = "从事水体生态修复与水污染治理的高新技术企业";

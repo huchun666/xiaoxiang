@@ -4,7 +4,7 @@
       <img src="../../assets/images/swiper8.jpg" alt class="about-us-bg-img" />
       <div class="about-us-title-box">
         <div class="about-us-title-box-top">
-          <img class="main-logo" src="../../assets/icons/icon-logo-white.png" alt />
+          <img class="main-logo" src="../../assets/icons/icon-logo-white.png" alt @click="handleGoHome"/>
           <img
             class="icon-meau"
             src="../../assets/icons/icon-meau-white.png"
@@ -42,7 +42,9 @@
         <div class="about-us-content-text" id="navigate1">
           <div class="about-us-content-text-top">
             <img src="../../assets/images/investmentDetail/type8/1.png" alt="">
-            <div class="about-us-content-text-top-webside">www.chaojixinxi.com</div>
+            <div class="about-us-content-text-top-webside">
+              <a target="_blank" href="http://www.chaojixinxi.com">www.chaojixinxi.com</a>
+            </div>
           </div>
           <div class="about-us-content-text-bottom">
             <div class="about-us-content-text-bottom-text">从事水体生态修复与水污染治理的高新技术企业，其中国原创的“以食藻虫引导水下生态修复专利技术”属世界首创，可构建水下生态修复系统。公司在国内相关细分行业排名第一</div>
@@ -160,9 +162,15 @@ export default {
     },
     handleDetail(type) {
       this.$router.push({name: 'investmentDetail'+type})
+    },
+    handleGoHome() {
+      if (this.$route.name !== 'home') {
+          this.$router.push({name: 'home'})
+      }
     }
   },
   mounted() {
+    $('html, body').animate({scrollTop: 0}, 500);
     window.addEventListener("scroll", this.handleScroll, true);
   }
 };

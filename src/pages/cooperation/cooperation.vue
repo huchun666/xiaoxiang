@@ -4,7 +4,7 @@
       <img src="../../assets/images/cooperation-bg-logo.jpg" alt class="about-us-bg-img" />
       <div class="about-us-title-box">
         <div class="about-us-title-box-top">
-          <img class="main-logo" src="../../assets/icons/icon-logo-white.png" alt />
+          <img class="main-logo" src="../../assets/icons/icon-logo-white.png" alt @click="handleGoHome"/>
           <img
             class="icon-meau"
             src="../../assets/icons/icon-meau-white.png"
@@ -74,6 +74,16 @@
           </div>
         </div>
       </div>
+      <div class="cooperation-and">
+        <div class="cooperation-and-box">
+          <div class="cooperation-and-img">
+            <img src="../../assets/images/cooperation5.jpg" alt="">
+          </div>
+          <div class="cooperation-and-text">
+            君合律师事务所  于1989年创立于北京，是中国最早的合伙制律师事务所之一。发展至今，君合已在海内外拥有十二个办公室和一支由超过240位合伙人和顾问、560多位受雇律师和法律翻译组成的逾800人的专业团队，是国际公认的、最优秀的中国大型综合律师事务所之一。
+          </div>
+        </div>
+      </div>
     </div>
     <w-footer></w-footer>
   </div>
@@ -93,6 +103,11 @@ export default {
     handleSwitch() {
       this.isShowAlert = !this.isShowAlert;
     },
+    handleGoHome() {
+      if (this.$route.name !== 'home') {
+          this.$router.push({name: 'home'})
+      }
+    }
   },
   mounted() {
 

@@ -3,7 +3,7 @@
   height: 100%;
   width: 100%;
   background-image: url('../../assets/images/bg-logo.png');
-  background-size: 450px 600px;
+  background-size: 538PX 668PX;
   background-repeat: no-repeat;
   background-position: center;
   .investment-bg-logo {
@@ -38,12 +38,14 @@
     }
     .investment-img-box {
       padding: 0 120px;
+      margin-bottom: 80px;
       .investment-img-li {
         position: relative;
         margin-right: 24px;
         cursor: pointer;
         .investment-img {
           height: 176px;
+          box-shadow: 0 4px 24px 0 rgba(0,0,0,0.08);
         }
         .investment-img-active {
           position: absolute;
@@ -66,6 +68,42 @@
           img {
             width: 40px;
             margin-right: 18.8px;
+            animation: checkCase 0.5s linear infinite alternate;
+            -moz-animation: checkCase 0.5s linear infinite alternate;
+            -o-animation: checkCase 0.5s linear infinite alternate;
+            -webkit-animation: checkCase 0.5s linear infinite alternate;
+          }
+          @keyframes checkCase {
+            from {
+              margin-right: 18.8px;
+            }
+            to {
+              margin-right: 10px;
+            }
+          }
+          @-webkit-keyframes checkCase {
+            from {
+              margin-right: 18.8px;
+            }
+            to {
+              margin-right: 10px;
+            }
+          }
+          @-moz-keyframes checkCase {
+            from {
+              margin-right: 18.8px;
+            }
+            to {
+              margin-right: 10px;
+            }
+          }
+          @-o-keyframes checkCase {
+            from {
+              margin-right: 18.8px;
+            }
+            to {
+              margin-right: 10px;
+            }
           }
           .look-case-text {
             color: #fff;

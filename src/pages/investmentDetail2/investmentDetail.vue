@@ -4,7 +4,7 @@
       <img src="../../assets/images/swiper2.jpg" alt class="about-us-bg-img" />
       <div class="about-us-title-box">
         <div class="about-us-title-box-top">
-          <img class="main-logo" src="../../assets/icons/icon-logo-white.png" alt />
+          <img class="main-logo" src="../../assets/icons/icon-logo-white.png" alt @click="handleGoHome"/>
           <img
             class="icon-meau"
             src="../../assets/icons/icon-meau-white.png"
@@ -48,7 +48,9 @@
         <div class="about-us-content-text" id="navigate1">
           <div class="about-us-content-text-top">
             <img src="../../assets/images/investmentDetail/type2/7.png" alt="">
-            <div class="about-us-content-text-top-webside">www.suqun-group.com</div>
+            <div class="about-us-content-text-top-webside">
+              <a target="_blank" href="http://www.suqun-group.com">www.suqun-group.com</a>
+            </div>
           </div>
           <div class="about-us-content-text-bottom">
             <div class="about-us-content-text-bottom-text">思泉新材是一家专注于功能性高分子材料研发、生产、销售的国家高新技术企业。思泉新材的产品涵盖导热材料、PCB板防护材料等业务领域，具备服务于军用、通讯、消费电子、机械制造、手持终端等行业的产品优势，持续为客户提供有竞争力的导热、防水全面解决方案。思泉新材2020年3月IPO工作已启动。</div>
@@ -178,9 +180,15 @@ export default {
     },
     handleDetail(type) {
       this.$router.push({name: 'investmentDetail'+type})
+    },
+    handleGoHome() {
+      if (this.$route.name !== 'home') {
+          this.$router.push({name: 'home'})
+      }
     }
   },
   mounted() {
+    $('html, body').animate({scrollTop: 0}, 500);
     window.addEventListener("scroll", this.handleScroll, true);
   }
 };

@@ -4,7 +4,7 @@
       <img src="../../assets/images/swiper6.jpg" alt class="about-us-bg-img" />
       <div class="about-us-title-box">
         <div class="about-us-title-box-top">
-          <img class="main-logo" src="../../assets/icons/icon-logo-white.png" alt />
+          <img class="main-logo" src="../../assets/icons/icon-logo-white.png" alt @click="handleGoHome"/>
           <img
             class="icon-meau"
             src="../../assets/icons/icon-meau-white.png"
@@ -35,12 +35,6 @@
             <span class="about-us-anchor-div-text" v-show="activeIndex === 2">简介</span>
           </div>
         </li>
-        <li @click="goAnchor(3)">
-          <div class="about-us-anchor-div1">
-            <div :class="{'li-active': activeIndex === 3}" class="about-us-anchor-div-maodian"><span></span></div>
-            <span class="about-us-anchor-div-text" v-show="activeIndex === 3">合作</span>
-          </div>
-        </li>
       </ul>
     </div>
     <div class="about-us-container-content">
@@ -48,7 +42,9 @@
         <div class="about-us-content-text" id="navigate1">
           <div class="about-us-content-text-top">
             <img src="../../assets/images/investmentDetail/type6/2.png" alt="">
-            <div class="about-us-content-text-top-webside">www.linkingcloud.cn</div>
+            <div class="about-us-content-text-top-webside">
+              <a target="_blank" href="http://www.linkingcloud.cn">www.linkingcloud.cn</a>
+            </div>
           </div>
           <div class="about-us-content-text-bottom">
             <div class="about-us-content-text-bottom-text">做医院自己的互联网，联空网络通过一站式就医聚合支付SaaS平台，再造移动互联时代的线上线下就医流程。全程支持在线挂号、在线复诊、送药到家的在线支付医保及自费的全流程就医服务。200多家医院客户包括华山医院、瑞金医院、301总院、北大附属一院等中国著名三甲医院，上海区域占有率接近70%。</div>
@@ -58,10 +54,6 @@
           </div>
         </div>
         <div class="investment-after" id="navigate2">
-          <div class="investment-after-title">投资方</div>
-          <div class="investment-after-imgs">
-            <img src="../../assets/images/investmentDetail/type6/2.png" alt />
-          </div>
           <div class="back-investment">
             <span @click="handleBackInvestment">回到投资组合</span>
           </div>
@@ -134,20 +126,12 @@ export default {
         window.pageYOffset ||
         document.documentElement.scrollTop ||
         document.body.scrollTop;
-
-      var windowHeight =
-        document.documentElement.clientHeight || document.body.clientHeight; //变量scrollHeight是滚动条的总高度
-      var scrollHeight =
-        document.documentElement.scrollHeight || document.body.scrollHeight; //滚动条到底部的条件
       let navigate1 = $("#navigate1").offset().top;
       if (scrollTop < navigate1) {
         this.activeIndex = 1;
       }
       if (scrollTop > navigate1) {
         this.activeIndex = 2;
-      }
-      if (scrollTop + windowHeight >= scrollHeight - 5) {
-        this.activeIndex = 3;
       }
     },
     goAnchor(type) {
@@ -176,9 +160,15 @@ export default {
     },
     handleDetail(type) {
       this.$router.push({name: 'investmentDetail'+type})
+    },
+    handleGoHome() {
+      if (this.$route.name !== 'home') {
+          this.$router.push({name: 'home'})
+      }
     }
   },
   mounted() {
+    $('html, body').animate({scrollTop: 0}, 500);
     window.addEventListener("scroll", this.handleScroll, true);
   }
 };

@@ -4,7 +4,7 @@
       <img src="../../assets/images/swiper4.jpg" alt class="about-us-bg-img" />
       <div class="about-us-title-box">
         <div class="about-us-title-box-top">
-          <img class="main-logo" src="../../assets/icons/icon-logo-white.png" alt />
+          <img class="main-logo" src="../../assets/icons/icon-logo-white.png" alt @click="handleGoHome"/>
           <img
             class="icon-meau"
             src="../../assets/icons/icon-meau-white.png"
@@ -48,7 +48,9 @@
         <div class="about-us-content-text" id="navigate1">
           <div class="about-us-content-text-top">
             <img src="../../assets/images/investmentDetail/type4/4.png" alt="">
-            <div class="about-us-content-text-top-webside">www.mambike.com</div>
+            <div class="about-us-content-text-top-webside">
+              <a target="_blank" href="http://www.mambike.com">www.mambike.com</a>
+            </div>
           </div>
           <div class="about-us-content-text-bottom">
             <div class="about-us-content-text-bottom-text">猛犸电动是智慧出行解决方案的提供商，专注于3亿两轮电动车出行市场。产品方案：涵盖车+电池+充换电一 体化解决方案，拥有70%为研发人员的团队架构，从而建立了以物联网、大数据和人工智能为核心技术的硬核产品壁垒及供应链竞争力。同时，全新的体验式销售和互联网营销，结合信贷金融和数据化赋能电动车营销市场， 开创电动车新零售和新纪元。</div>
@@ -175,9 +177,15 @@ export default {
     },
     handleDetail(type) {
       this.$router.push({name: 'investmentDetail'+type})
+    },
+    handleGoHome() {
+      if (this.$route.name !== 'home') {
+          this.$router.push({name: 'home'})
+      }
     }
   },
   mounted() {
+    $('html, body').animate({scrollTop: 0}, 500);
     window.addEventListener("scroll", this.handleScroll, true);
   }
 };

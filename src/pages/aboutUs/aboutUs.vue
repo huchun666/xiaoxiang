@@ -2,9 +2,10 @@
   <div class="about-us-container">
     <div class="about-us-title">
       <img src="../../assets/images/about-us-bg.jpg" alt class="about-us-bg-img" />
+      <img src="../../assets/images/black_modal.png" alt="" class="black-modal-img">
       <div class="about-us-title-box">
         <div class="about-us-title-box-top">
-          <img class="main-logo" src="../../assets/icons/icon-logo-white.png" alt />
+          <img class="main-logo" src="../../assets/icons/icon-logo-white.png" alt @click="handleGoHome"/>
           <img
             class="icon-meau"
             src="../../assets/icons/icon-meau-white.png"
@@ -105,6 +106,11 @@ export default {
     },
     goAnchor(type) {
       $('html, body').animate({scrollTop: $('#navigate' + type).offset().top}, 1000)
+    },
+    handleGoHome() {
+      if (this.$route.name !== 'home') {
+          this.$router.push({name: 'home'})
+      }
     }
   },
   mounted() {

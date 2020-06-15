@@ -64,7 +64,7 @@ export default {
         text-align: center;
         color: #121214;
         font-size: 13px;
-        background: #F8F8F8;
+        background: #eee;
         opacity: 0.3;
     }
 }

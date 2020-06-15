@@ -2,9 +2,10 @@
   <div class='core-team'>
     <div class="about-us-title">
       <img src="../../assets/images/core-team-bg.png" alt class="about-us-bg-img" />
+      <img src="../../assets/images/black_modal.png" alt="" class="black-modal-img">
       <div class="about-us-title-box">
         <div class="about-us-title-box-top">
-          <img class="main-logo" src="../../assets/icons/icon-logo-white.png" alt />
+          <img class="main-logo" src="../../assets/icons/icon-logo-white.png" alt @click="handleGoHome"/>
           <img
             class="icon-meau"
             src="../../assets/icons/icon-meau-white.png"
@@ -16,7 +17,7 @@
           </transition>
         </div>
         <div class="about-us-title-box-bottom">
-          <div class="about-us-title-box-bottom-left">关于我们</div>
+          <div class="about-us-title-box-bottom-left">核心团队</div>
           <div class="about-us-title-box-bottom-right">小橡成长大象无形</div>
         </div>
       </div>
@@ -90,6 +91,11 @@ export default {
     handleSwitch() {
       this.isShowAlert = !this.isShowAlert;
     },
+    handleGoHome() {
+      if (this.$route.name !== 'home') {
+          this.$router.push({name: 'home'})
+      }
+    }
   },
   mounted() {
 

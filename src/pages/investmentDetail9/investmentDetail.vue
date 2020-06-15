@@ -4,7 +4,7 @@
       <img src="../../assets/images/swiper9.jpg" alt class="about-us-bg-img" />
       <div class="about-us-title-box">
         <div class="about-us-title-box-top">
-          <img class="main-logo" src="../../assets/icons/icon-logo-white.png" alt />
+          <img class="main-logo" src="../../assets/icons/icon-logo-white.png" alt @click="handleGoHome"/>
           <img
             class="icon-meau"
             src="../../assets/icons/icon-meau-white.png"
@@ -42,7 +42,9 @@
         <div class="about-us-content-text" id="navigate1">
           <div class="about-us-content-text-top">
             <img src="../../assets/images/investmentDetail/type9/1.png" alt="">
-            <div class="about-us-content-text-top-webside">www.chaojixinxi.com</div>
+            <div class="about-us-content-text-top-webside">
+              <a target="_blank" href="http://www.chaojixinxi.com">www.chaojixinxi.com</a>
+            </div>
           </div>
           <div class="about-us-content-text-bottom">
             <div class="about-us-content-text-bottom-text">亚太地区领先的芯片设计和集成电路生产服务企业。在国内拥有无可比拟的IP数量，为我国电子产业的发展做出过重要贡献。公司已为Bosch、Google等世界知名企业设计并生产超过10亿颗芯片</div>
@@ -160,9 +162,15 @@ export default {
     },
     handleDetail(type) {
       this.$router.push({name: 'investmentDetail'+type})
+    },
+    handleGoHome() {
+      if (this.$route.name !== 'home') {
+          this.$router.push({name: 'home'})
+      }
     }
   },
   mounted() {
+    $('html, body').animate({scrollTop: 0}, 500);
     window.addEventListener("scroll", this.handleScroll, true);
   }
 };

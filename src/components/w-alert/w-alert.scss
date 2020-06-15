@@ -15,6 +15,7 @@
         .main-logo-image {
             width: 280px;
             height: 96px;
+            cursor: pointer;
         }
         .main-close-image {
             width: 96px;
@@ -26,8 +27,8 @@
         height: calc(100% - 96px);
         position: relative;
         .bg-logo-image {
-            width: 40%;
-            height: 80%;
+            width: 538PX;
+            height: 668PX;
             margin-left: -120px;
             margin-top: 50px;
         }
@@ -99,6 +100,9 @@
                     .alert-tab-line-active {
                         opacity: 1;
                     }
+                }
+                .alert-tab-box:hover .alert-tab-text {
+                    opacity: 1;
                 }
             }
         }

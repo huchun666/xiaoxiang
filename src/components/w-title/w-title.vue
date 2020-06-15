@@ -1,6 +1,6 @@
 <template>
     <div class='w-title'>
-        <img class="main-logo" src="../../assets/images/main-logo.png" alt="">
+        <img class="main-logo" src="../../assets/images/main-logo.png" alt="" @click="handleGoHome">
         <img class="icon-meau" src="../../assets/icons/icon-meau.png" alt="" @click="handleSwitch">
         <transition name="fade">
             <w-alert v-if="isShowAlert" @hiddenMeau="handleSwitch"></w-alert>
@@ -22,6 +22,11 @@ export default {
     methods: {
         handleSwitch() {
             this.isShowAlert = !this.isShowAlert;
+        },
+        handleGoHome() {
+            if (this.$route.name !== 'home') {
+                this.$router.push({name: 'home'})
+            }
         }
     },
     mounted() {
@@ -42,6 +47,7 @@ export default {
     left: 0;
     width: calc(100% - 202px);
     .main-logo {
+        cursor: pointer;
         height: 100%;
         width: 280px;
     }

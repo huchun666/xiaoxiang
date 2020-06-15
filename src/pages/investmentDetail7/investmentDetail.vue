@@ -4,7 +4,7 @@
       <img src="../../assets/images/swiper7.jpg" alt class="about-us-bg-img" />
       <div class="about-us-title-box">
         <div class="about-us-title-box-top">
-          <img class="main-logo" src="../../assets/icons/icon-logo-white.png" alt />
+          <img class="main-logo" src="../../assets/icons/icon-logo-white.png" alt @click="handleGoHome"/>
           <img
             class="icon-meau"
             src="../../assets/icons/icon-meau-white.png"
@@ -18,7 +18,7 @@
         <div class="about-us-title-box-bottom">
           <div class="about-us-title-box-bottom-top">投资组合</div>
           <div class="about-us-title-box-bottom-middle">爱乐达</div>
-          <div class="about-us-title-box-bottom-bottom">公司主要为飞机提供部件制造</div>
+          <div class="about-us-title-box-bottom-bottom">公司主要为飞机提供零部件制造</div>
         </div>
       </div>
     </div>
@@ -48,7 +48,9 @@
         <div class="about-us-content-text" id="navigate1">
           <div class="about-us-content-text-top">
             <img src="../../assets/images/investmentDetail/type7/5.png" alt="">
-            <div class="about-us-content-text-top-webside">www.cdald.com</div>
+            <div class="about-us-content-text-top-webside">
+              <a target="_blank" href="http://www.cdald.com">www.cdald.com</a>
+            </div>
           </div>
           <div class="about-us-content-text-bottom">
             <div class="about-us-content-text-bottom-text">国内首家具有飞机零部件热处理生产线的民营企业，是波音、空客在国内第一家民营企业一级供应商，也是中国商飞和现役主力军机的供应商。2017年8月22日创业板上市，股票代码SZ300696。</div>
@@ -178,9 +180,15 @@ export default {
     },
     handleDetail(type) {
       this.$router.push({name: 'investmentDetail'+type})
+    },
+    handleGoHome() {
+      if (this.$route.name !== 'home') {
+          this.$router.push({name: 'home'})
+      }
     }
   },
   mounted() {
+    $('html, body').animate({scrollTop: 0}, 500);
     window.addEventListener("scroll", this.handleScroll, true);
   }
 };

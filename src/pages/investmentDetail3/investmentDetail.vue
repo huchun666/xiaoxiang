@@ -4,7 +4,7 @@
       <img src="../../assets/images/swiper3.jpg" alt class="about-us-bg-img" />
       <div class="about-us-title-box">
         <div class="about-us-title-box-top">
-          <img class="main-logo" src="../../assets/icons/icon-logo-white.png" alt />
+          <img class="main-logo" src="../../assets/icons/icon-logo-white.png" alt @click="handleGoHome"/>
           <img
             class="icon-meau"
             src="../../assets/icons/icon-meau-white.png"
@@ -48,7 +48,9 @@
         <div class="about-us-content-text" id="navigate1">
           <div class="about-us-content-text-top">
             <img src="../../assets/images/investmentDetail/type3/8.png" alt="">
-            <div class="about-us-content-text-top-webside">www.shenmachuxing.com</div>
+            <div class="about-us-content-text-top-webside">
+              <a target="_blank" href="http://www.shenmachuxing.com">www.shenmachuxing.com</a>
+            </div>
           </div>
           <div class="about-us-content-text-bottom">
             <div class="about-us-content-text-bottom-text">什马出行聚焦新能源汽车流通领域的产业互联网平台，专注服务3-6线城市个人出行需求人群，通过塑造OMO（线上融合线下）分销网络体系，辅以互联网+的平台化赋能，提供“生产-交易-金融-仓储-物流-售后”的全渠道产业链条和用户车生命全周期服务，推动新能源产业流通领域科技化、消费化、服务化，让8亿人出行更美好。 </div>
@@ -179,9 +181,15 @@ export default {
     },
     handleDetail(type) {
       this.$router.push({name: 'investmentDetail'+type})
+    },
+    handleGoHome() {
+      if (this.$route.name !== 'home') {
+          this.$router.push({name: 'home'})
+      }
     }
   },
   mounted() {
+    $('html, body').animate({scrollTop: 0}, 500);
     window.addEventListener("scroll", this.handleScroll, true);
   }
 };

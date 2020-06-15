@@ -14,6 +14,13 @@
   height: 100%;
   position: relative;
 }
+.black-modal-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 96px;
+}
 .about-us-title-box {
   position: absolute;
   top: 0;
@@ -22,8 +29,9 @@
   justify-content: space-between;
   flex-direction: column;
   height: calc(100% - 143px);
-  padding: 0 93px 143px 120px;
-  width: calc(100% - 213px);
+  padding: 0 82px 143px 120px;
+  width: calc(100% - 202px);
+  z-index: 10;
   .about-us-title-box-bottom {
     display: flex;
     justify-content: space-between;
@@ -45,6 +53,7 @@
   justify-content: space-between;
   box-sizing: border-box;
   .main-logo {
+        cursor: pointer;
     height: 100%;
     width: 280px;
   }
@@ -101,6 +110,7 @@
   .investment-after-imgs {
     display: flex;
     overflow-x: auto;
+    justify-content: center;
     img {
       margin-left: 8px;
       height: 221px;

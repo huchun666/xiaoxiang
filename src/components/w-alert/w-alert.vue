@@ -1,7 +1,7 @@
 <template>
     <div class='w-alert'>
         <div class="alert-header">
-            <img src="../../assets/images/main-logo.png" alt="" class="main-logo-image">
+            <img src="../../assets/images/main-logo.png" alt="" class="main-logo-image" @click="handleGoHome">
             <img src="../../assets/icons/icon-close.png" alt="" class="main-close-image" @click="handleHiddenAlert">
         </div>
         <div class="alert-content">
@@ -89,6 +89,11 @@ export default {
         },
         handleHiddenAlert() {
             this.$emit('hiddenMeau')
+        },
+        handleGoHome() {
+            if (this.$route.name !== 'home') {
+                this.$router.push({name: 'home'})
+            }
         }
     },
     mounted() {
