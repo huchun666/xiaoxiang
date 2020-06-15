@@ -53,7 +53,7 @@
           <div class="about-us-content-text-bottom">
             <div class="about-us-content-text-bottom-text">做医院自己的互联网，联空网络通过一站式就医聚合支付SaaS平台，再造移动互联时代的线上线下就医流程。全程支持在线挂号、在线复诊、送药到家的在线支付医保及自费的全流程就医服务。200多家医院客户包括华山医院、瑞金医院、301总院、北大附属一院等中国著名三甲医院，上海区域占有率接近70%。</div>
             <div class="about-us-content-text-bottom-img">
-              <img src="../../assets/images/investmentDetail/type7/6.jpg" alt="">
+              <img src="../../assets/images/investmentDetail/type6/1.png" alt="">
             </div>
           </div>
         </div>
