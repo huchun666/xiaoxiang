@@ -3,13 +3,22 @@
     <div class="about-us-title">
       <img src="../../assets/images/swiper8.jpg" alt class="about-us-bg-img" />
       <div class="about-us-title-box">
-        <div class="about-us-title-box-top">
-          <img class="main-logo" src="../../assets/icons/icon-logo-white.png" alt @click="handleGoHome"/>
+        <div class="about-us-title-box-top" :class="{'about-us-title-box-top-active': isShowTop}">
+          <img class="main-logo" src="../../assets/icons/icon-logo-white.png" alt @click="handleGoHome" v-show="!isShowTop"/>
+          <img class="main-logo" src="../../assets/images/main-logo.png" alt @click="handleGoHome" v-show="isShowTop"/>
           <img
             class="icon-meau"
             src="../../assets/icons/icon-meau-white.png"
             alt
             @click="handleSwitch"
+            v-show="!isShowTop"
+          />
+          <img
+            class="icon-meau"
+            src="../../assets/icons/icon-meau.png"
+            alt
+            @click="handleSwitch"
+            v-show="isShowTop"
           />
           <transition name="fade">
             <w-alert v-if="isShowAlert" @hiddenMeau="handleSwitch"></w-alert>
@@ -25,7 +34,7 @@
     <div class="about-us-anchor-div">
       <ul class="about-us-anchor">
         
-        <li @click="goAnchor(2)">
+        <li @click="goAnchor(1)">
           <div class="about-us-anchor-div1">
             <div :class="{'li-active': activeIndex === 1}" class="about-us-anchor-div-maodian"><span></span></div>
             <span class="about-us-anchor-div-text" v-show="activeIndex === 1">简介</span>
@@ -106,7 +115,8 @@ export default {
     return {
       isShowAlert: false,
       activeIndex: 1,
-      scrollLeftPX: 0
+      scrollLeftPX: 0,
+      isShowTop: false
     };
   },
   created() {},
@@ -119,6 +129,11 @@ export default {
         window.pageYOffset ||
         document.documentElement.scrollTop ||
         document.body.scrollTop;
+      if (scrollTop > 0) {
+        this.isShowTop = true;
+      }else {
+        this.isShowTop = false;
+      }
 
       
       let navigate1 = $("#navigate1").offset().top;

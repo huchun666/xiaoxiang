@@ -26,7 +26,7 @@
       <ul class="about-us-anchor">
         <li :class="{'li-active': activeIndex === 1}" @click="goAnchor(1)">投资方向</li>
         <li :class="{'li-active': activeIndex === 2}" @click="goAnchor(2)">投后赋能</li>
-        <li :class="{'li-active': activeIndex === 2}" @click="goAnchor(3)">联系我们</li>
+        <li :class="{'li-active': activeIndex === 3}" @click="goAnchor(3)">联系我们</li>
       </ul>
     </div>
     <div class="about-us-container-content">
@@ -89,7 +89,11 @@ export default {
         document.documentElement.scrollTop ||
         document.body.scrollTop;
 
-      
+      var windowHeight =
+        document.documentElement.clientHeight || document.body.clientHeight; //变量scrollHeight是滚动条的总高度
+      var scrollHeight =
+        document.documentElement.scrollHeight || document.body.scrollHeight; //滚动条到底部的条件
+
       let navigate1 = $("#navigate1").offset().top;
       if (scrollTop < navigate1) {
         this.activeIndex = 1;
@@ -97,7 +101,9 @@ export default {
       if (scrollTop > navigate1) {
         this.activeIndex = 2;
       }
-      
+      if (scrollTop + windowHeight >= scrollHeight - 5) {
+        this.activeIndex = 3;
+      }
     },
     goAnchor(type) {
       $('html, body').animate({scrollTop: $('#navigate' + type).offset().top}, 1000)

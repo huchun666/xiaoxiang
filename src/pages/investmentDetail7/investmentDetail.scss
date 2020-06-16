@@ -42,7 +42,8 @@
 .about-us-title-box-top {
   width: 100vw;
   padding: 0 93px 0 120px;
-  position: absolute;
+  z-index: 10000;
+  position: fixed;
   left: 0;
   top: 0;
   height: 96px;
@@ -59,6 +60,9 @@
     height: 96px;
     cursor: pointer;
   }
+}
+.about-us-title-box-top-active {
+  background: #fff;
 }
 .about-us-anchor-box {
   display: flex;
