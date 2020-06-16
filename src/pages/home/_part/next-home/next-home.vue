@@ -32,31 +32,31 @@
               ref="carousel"
             >
               <el-carousel-item>
-                <img src="../../../../assets/images/swiper1.jpg" alt class="swiper-img" />
+                <img src="../../../../assets/images/swiper1.jpg" alt class="swiper-img" @click="handleKnowMore" />
               </el-carousel-item>
               <el-carousel-item>
-                <img src="../../../../assets/images/swiper2.jpg" alt class="swiper-img" />
+                <img src="../../../../assets/images/swiper2.jpg" alt class="swiper-img" @click="handleKnowMore" />
               </el-carousel-item>
               <el-carousel-item>
-                <img src="../../../../assets/images/swiper3.jpg" alt class="swiper-img" />
+                <img src="../../../../assets/images/swiper3.jpg" alt class="swiper-img" @click="handleKnowMore" />
               </el-carousel-item>
               <el-carousel-item>
-                <img src="../../../../assets/images/swiper4.jpg" alt class="swiper-img" />
+                <img src="../../../../assets/images/swiper4.jpg" alt class="swiper-img" @click="handleKnowMore" />
               </el-carousel-item>
               <el-carousel-item>
-                <img src="../../../../assets/images/swiper5.jpg" alt class="swiper-img" />
+                <img src="../../../../assets/images/swiper5.jpg" alt class="swiper-img" @click="handleKnowMore" />
               </el-carousel-item>
               <el-carousel-item>
-                <img src="../../../../assets/images/swiper6.jpg" alt class="swiper-img" />
+                <img src="../../../../assets/images/swiper6.jpg" alt class="swiper-img" @click="handleKnowMore" />
               </el-carousel-item>
               <el-carousel-item>
-                <img src="../../../../assets/images/swiper7.jpg" alt class="swiper-img" />
+                <img src="../../../../assets/images/swiper7.jpg" alt class="swiper-img" @click="handleKnowMore" />
               </el-carousel-item>
               <el-carousel-item>
-                <img src="../../../../assets/images/swiper8.jpg" alt class="swiper-img" />
+                <img src="../../../../assets/images/swiper8.jpg" alt class="swiper-img" @click="handleKnowMore" />
               </el-carousel-item>
               <el-carousel-item>
-                <img src="../../../../assets/images/swiper9.jpg" alt class="swiper-img" />
+                <img src="../../../../assets/images/swiper9.jpg" alt class="swiper-img" @click="handleKnowMore" />
               </el-carousel-item>
             </el-carousel>
             <div class="line-text">小橡成长，大象无形</div>

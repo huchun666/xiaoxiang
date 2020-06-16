@@ -24,15 +24,11 @@
     </div>
     <div class="about-us-anchor-div">
       <ul class="about-us-anchor">
-        <li @click="goAnchor(1)">
-          <div class="about-us-anchor-div1">
-            <div :class="{'li-active': activeIndex === 1}" class="about-us-anchor-div-maodian"><span></span></div>
-          </div>
-        </li>
+        
         <li @click="goAnchor(2)">
           <div class="about-us-anchor-div1">
-            <div :class="{'li-active': activeIndex === 2}" class="about-us-anchor-div-maodian"><span></span></div>
-            <span class="about-us-anchor-div-text" v-show="activeIndex === 2">简介</span>
+            <div :class="{'li-active': activeIndex === 1}" class="about-us-anchor-div-maodian"><span></span></div>
+            <span class="about-us-anchor-div-text" v-show="activeIndex === 1">简介</span>
           </div>
         </li>
       </ul>
@@ -129,9 +125,6 @@ export default {
       let navigate1 = $("#navigate1").offset().top;
       if (scrollTop < navigate1) {
         this.activeIndex = 1;
-      }
-      if (scrollTop > navigate1) {
-        this.activeIndex = 2;
       }
     },
     goAnchor(type) {

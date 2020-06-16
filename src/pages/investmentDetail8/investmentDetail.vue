@@ -24,15 +24,11 @@
     </div>
     <div class="about-us-anchor-div">
       <ul class="about-us-anchor">
-        <li @click="goAnchor(1)">
-          <div class="about-us-anchor-div1">
-            <div :class="{'li-active': activeIndex === 1}" class="about-us-anchor-div-maodian"><span></span></div>
-          </div>
-        </li>
+        
         <li @click="goAnchor(2)">
           <div class="about-us-anchor-div1">
-            <div :class="{'li-active': activeIndex === 2}" class="about-us-anchor-div-maodian"><span></span></div>
-            <span class="about-us-anchor-div-text" v-show="activeIndex === 2">简介</span>
+            <div :class="{'li-active': activeIndex === 1}" class="about-us-anchor-div-maodian"><span></span></div>
+            <span class="about-us-anchor-div-text" v-show="activeIndex === 1">简介</span>
           </div>
         </li>
       </ul>
@@ -124,16 +120,10 @@ export default {
         document.documentElement.scrollTop ||
         document.body.scrollTop;
 
-      var windowHeight =
-        document.documentElement.clientHeight || document.body.clientHeight; //变量scrollHeight是滚动条的总高度
-      var scrollHeight =
-        document.documentElement.scrollHeight || document.body.scrollHeight; //滚动条到底部的条件
+      
       let navigate1 = $("#navigate1").offset().top;
       if (scrollTop < navigate1) {
         this.activeIndex = 1;
-      }
-      if (scrollTop + windowHeight >= scrollHeight - 5) {
-        this.activeIndex = 2;
       }
     },
     goAnchor(type) {

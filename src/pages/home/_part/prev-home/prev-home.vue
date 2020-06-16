@@ -51,7 +51,7 @@
             </div>
           </div>
         </div>
-        <img src="../../../../assets/icons/icon-next-page-icon.png" alt class="next-page-img"/>
+        <img src="../../../../assets/icons/icon-next-page-icon.png" alt class="next-page-img" @click="handleNextPage"/>
       </div>
     </div>
   </div>

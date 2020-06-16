@@ -24,7 +24,7 @@
       <div class="cooperation-title">
         <div class="cooperation-title-box">
           <span class="cooperation-title-left">战略合作伙伴</span>
-          <span class="cooperation-title-right">Strategic cooperation</span>
+          <span class="cooperation-title-right">STRATEGIC COOPERATION</span>
         </div>
       </div>
       <div class="cooperation-img-list">

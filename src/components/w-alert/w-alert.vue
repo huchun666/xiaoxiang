@@ -55,7 +55,7 @@ export default {
             this.activeIndex = 3;
         }else if (routeName === 'cooperation') {
             this.activeIndex = 4;
-        }else if (routeName === 'investmentDetail') {
+        }else if (routeName.indexOf('investmentDetail') > -1) {
             this.activeIndex = 3;
         }
     },
