@@ -26,7 +26,7 @@
   top: 0;
   left: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   flex-direction: column;
   height: calc(100% - 143px);
   padding: 0 82px 143px 120px;
@@ -47,9 +47,15 @@
   }
 }
 .about-us-title-box-top {
+  width: 100vw;
+  padding: 0 83px 0 120px;
   height: 96px;
   border-bottom: 1px solid #fff;
   display: flex;
+  z-index: 10000;
+  position: fixed;
+  top: 0;
+  left: 0;
   justify-content: space-between;
   box-sizing: border-box;
   .main-logo {
@@ -62,6 +68,9 @@
     height: 96px;
     cursor: pointer;
   }
+}
+.about-us-title-box-top-active {
+  background: #fff;
 }
 .about-us-anchor-box {
   display: flex;

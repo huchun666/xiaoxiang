@@ -25,11 +25,11 @@
   top: 0;
   left: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   flex-direction: column;
   height: calc(100% - 143px);
-  padding: 0 93px 143px 120px;
-  width: calc(100% - 213px);
+  padding: 0 83px 143px 120px;
+  width: calc(100% - 203px);
   .about-us-title-box-bottom {
     display: flex;
     justify-content: space-between;
@@ -45,6 +45,12 @@
   }
 }
 .about-us-title-box-top {
+  width: 100vw;
+  padding: 0 83px 0 120px;
+  z-index: 10000;
+  position: fixed;
+  left: 0;
+  top: 0;
   height: 96px;
   display: flex;
   justify-content: space-between;
@@ -59,6 +65,9 @@
     height: 96px;
     cursor: pointer;
   }
+}
+.about-us-title-box-top-active {
+  background: #fff;
 }
 .core-team-content {
   padding: 0 222px 120px 222px;

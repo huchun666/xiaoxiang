@@ -4,13 +4,22 @@
       <img src="../../assets/images/about-us-bg.jpg" alt class="about-us-bg-img" />
       <img src="../../assets/images/black_modal.png" alt="" class="black-modal-img">
       <div class="about-us-title-box">
-        <div class="about-us-title-box-top">
-          <img class="main-logo" src="../../assets/icons/icon-logo-white.png" alt @click="handleGoHome"/>
+        <div class="about-us-title-box-top" :class="{'about-us-title-box-top-active': isShowTop}">
+          <img class="main-logo" src="../../assets/icons/icon-logo-white.png" alt @click="handleGoHome" v-show="!isShowTop"/>
+          <img class="main-logo" src="../../assets/images/main-logo.png" alt @click="handleGoHome" v-show="isShowTop"/>
           <img
             class="icon-meau"
             src="../../assets/icons/icon-meau-white.png"
             alt
             @click="handleSwitch"
+            v-show="!isShowTop"
+          />
+          <img
+            class="icon-meau"
+            src="../../assets/icons/icon-meau.png"
+            alt
+            @click="handleSwitch"
+            v-show="isShowTop"
           />
           <transition name="fade">
             <w-alert v-if="isShowAlert" @hiddenMeau="handleSwitch"></w-alert>
@@ -75,7 +84,8 @@ export default {
   data() {
     return {
       isShowAlert: false,
-      activeIndex: 1
+      activeIndex: 1,
+      isShowTop: false
     };
   },
   created() {},
@@ -88,7 +98,11 @@ export default {
         window.pageYOffset ||
         document.documentElement.scrollTop ||
         document.body.scrollTop;
-
+      if (scrollTop > 0) {
+        this.isShowTop = true;
+      }else {
+        this.isShowTop = false;
+      }
       var windowHeight =
         document.documentElement.clientHeight || document.body.clientHeight; //变量scrollHeight是滚动条的总高度
       var scrollHeight =
