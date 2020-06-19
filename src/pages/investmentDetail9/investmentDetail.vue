@@ -26,8 +26,8 @@
         </div>
         <div class="about-us-title-box-bottom">
           <div class="about-us-title-box-bottom-top">投资组合</div>
-          <div class="about-us-title-box-bottom-middle">芯原微电子</div>
-          <div class="about-us-title-box-bottom-bottom">亚太地区领先的芯片设计和集成电路生产服务企业</div>
+          <div class="about-us-title-box-bottom-middle">芯原</div>
+          <div class="about-us-title-box-bottom-bottom">芯原是一家依托自主半导体 IP，为客户提供平台化、全方位、一站式芯片定制服务和半导体 IP 授权服务的企业。</div>
         </div>
       </div>
     </div>
@@ -48,11 +48,11 @@
           <div class="about-us-content-text-top">
             <img src="../../assets/images/investmentDetail/type9/1.png" alt="">
             <div class="about-us-content-text-top-webside">
-              <a target="_blank" href="http://www.chaojixinxi.com">www.chaojixinxi.com</a>
+              <a target="_blank" href="http://www.verisilicon.com/cn">www.verisilicon.com/cn</a>
             </div>
           </div>
           <div class="about-us-content-text-bottom">
-            <div class="about-us-content-text-bottom-text">亚太地区领先的芯片设计和集成电路生产服务企业。在国内拥有无可比拟的IP数量，为我国电子产业的发展做出过重要贡献。公司已为Bosch、Google等世界知名企业设计并生产超过10亿颗芯片</div>
+            <div class="about-us-content-text-bottom-text">芯原是一家依托自主半导体 IP，为客户提供平台化、全方位、一站式芯片定制服务和半导体 IP 授权服务的企业。为包含芯片设计公司、半导体垂直整合制造商(IDM)、系统厂商和大型互联网公司在内的各种客户提供高效经济的半导体产品替代解决方案。业务范围覆盖消费电子、汽车电子、计算机及周边、工业、数据处理、物联网等行业应用领域。</div>
           </div>
         </div>
         <div class="investment-after" id="navigate2">
@@ -97,7 +97,7 @@
         </div>
         <div class="administration-team-item" @click="handleDetail(8)">
           <img src="../../assets/images/swiper8.jpg" alt="">
-          <div class="administration-team-item-float">太和水生态</div>
+          <div class="administration-team-item-float">太和水</div>
         </div>
       </div>
       <div class="icon-next-box" @click="handleNextSwiper">

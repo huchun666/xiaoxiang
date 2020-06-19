@@ -26,7 +26,7 @@
         </div>
         <div class="about-us-title-box-bottom">
           <div class="about-us-title-box-bottom-top">投资组合</div>
-          <div class="about-us-title-box-bottom-middle">太和水生态</div>
+          <div class="about-us-title-box-bottom-middle">太和水</div>
           <div class="about-us-title-box-bottom-bottom">从事水体生态修复与水污染治理的高新技术企业</div>
         </div>
       </div>
@@ -48,11 +48,11 @@
           <div class="about-us-content-text-top">
             <img src="../../assets/images/investmentDetail/type8/1.png" alt="">
             <div class="about-us-content-text-top-webside">
-              <a target="_blank" href="http://www.chaojixinxi.com">www.chaojixinxi.com</a>
+              <a target="_blank" href="http://www.shtaihe.com">www.shtaihe.com</a>
             </div>
           </div>
           <div class="about-us-content-text-bottom">
-            <div class="about-us-content-text-bottom-text">从事水体生态修复与水污染治理的高新技术企业，其中国原创的“以食藻虫引导水下生态修复专利技术”属世界首创，可构建水下生态修复系统。公司在国内相关细分行业排名第一</div>
+            <div class="about-us-content-text-bottom-text">从事水体生态修复与水污染治理的高新技术企业，其中国原创的“以食藻虫引导水下生态修复专利技术”属世界首创，可构建水下生态修复系统。公司在国内相关细分行业排名第一。</div>
           </div>
         </div>
         <div class="investment-after" id="navigate2">
@@ -97,7 +97,7 @@
         </div>
         <div class="administration-team-item" @click="handleDetail(9)">
           <img src="../../assets/images/swiper9.jpg" alt="">
-          <div class="administration-team-item-float">芯原微电子</div>
+          <div class="administration-team-item-float">芯原</div>
         </div>
       </div>
       <div class="icon-next-box" @click="handleNextSwiper">

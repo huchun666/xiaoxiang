@@ -55,6 +55,8 @@ export default {
             span {
                 font-weight: bold;
                 margin-left: 20px;
+                text-decoration: underline;
+                color: blue;
             }
         }
     }

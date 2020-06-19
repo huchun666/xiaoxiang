@@ -59,7 +59,7 @@
               <div class="administration-team-text-top">小橡管理创始人团队</div>
               <div
                 class="administration-team-text-bottom"
-              >既是管理公司的创始人，也是深入创业一线的投资作业人。既是管理公司的创始人，也是深入创业一线的投资作业人。</div>
+              >既是管理公司的创始人，也是深入创业一线的投资作业人。</div>
             </div>
           </div>
           <div class="administration-team-top">

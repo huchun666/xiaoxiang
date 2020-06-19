@@ -167,10 +167,10 @@ export default {
           text = "爱乐达";
           break;
         case 8:
-          text = "太和水生态";
+          text = "太和水";
           break;
         case 9:
-          text = "芯原微电子";
+          text = "芯原";
           break;
       }
       return text;
@@ -179,7 +179,7 @@ export default {
       var text = "";
       switch (index) {
         case 1:
-          text = "目前国内唯一可以同时提供NAND";
+          text = "东芯半导体是目前国内唯一可以同时提供 NAND/NOR/DRAM 设计工艺和产品方案的本土存储芯片研发设计公司。";
           break;
         case 2:
           text = "思泉新材是一家专注于功能性高分子材料研发、生产、销售的国家高新技术企业";
@@ -191,19 +191,19 @@ export default {
           text = "猛犸电动是智慧出行解决方案的提供商";
           break;
         case 5:
-          text = "基于深度学习的计算机视觉技术和大数据技术为核心，其软硬件一体的AI产线缺陷智能识别解决方案";
+          text = "感图科技是软硬件一体的 AI 产线缺陷智能识别解决方案的提供商";
           break;
         case 6:
           text = "通过一站式就医聚合支付SaaS平台，再造移动互联时代的线上线下就医流程";
           break;
         case 7:
-          text = "公司主要为飞机提供零部件制造";
+          text = "致力于民用飞机零件、军用飞机零件制造。";
           break;
         case 8:
           text = "从事水体生态修复与水污染治理的高新技术企业";
           break;
         case 9:
-          text = "亚太地区领先的芯片设计和集成电路生产服务企业";
+          text = "芯原是一家依托自主半导体 IP，为客户提供平台化、全方位、一站式芯片定制服务和半导体 IP 授权服务的企业。";
           break;
       }
       return text;

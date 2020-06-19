@@ -109,11 +109,11 @@
         </div>
         <div class="administration-team-item" @click="handleDetail(8)">
           <img src="../../assets/images/swiper8.jpg" alt="">
-          <div class="administration-team-item-float">太和水生态</div>
+          <div class="administration-team-item-float">太和水</div>
         </div>
         <div class="administration-team-item" @click="handleDetail(9)">
           <img src="../../assets/images/swiper9.jpg" alt="">
-          <div class="administration-team-item-float">芯原微电子</div>
+          <div class="administration-team-item-float">芯原</div>
         </div>
       </div>
       <div class="icon-next-box" @click="handleNextSwiper">
