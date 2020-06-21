@@ -2,12 +2,9 @@
     <div class='w-footer'>
         <div class="footer-top">
             <div class="footer-top-left">小橡成长，大象无形</div>
-            <div class="footer-top-right">联系我们
-                <span>021-20273663</span>
-            </div>
         </div>
         <div class="footer-bottom">
-            Copyright @ 2018 Acorn Partners. All rights reserved.      地址：中国（上海）自由贸易试验区祖冲之路295号5F      备案/许可证编号：沪ICP备18015327号
+            Copyright @ 2018 Acorn Partners. All rights reserved. <span class="footer-address">地址：中国（上海）自由贸易试验区祖冲之路295号5F</span><span class="contact-us">联系我们：021-20273663</span>   备案/许可证编号：沪ICP备18015327号
         </div>
     </div>
 </template>
@@ -42,11 +39,10 @@ export default {
     border-top: 1px solid #E4E4E4;
     .footer-top {
         height: 100px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
         padding: 0 120px;
         color: #333333;
+        display: flex;
+        align-items: center;
         .footer-top-left {
             font-size: 18px;
         }
@@ -68,6 +64,12 @@ export default {
         font-size: 13px;
         background: #eee;
         opacity: 0.3;
+        .footer-address {
+            margin-left: 20px;
+        }
+        .contact-us {
+            margin: 0 20px;
+        }
     }
 }
 </style>
