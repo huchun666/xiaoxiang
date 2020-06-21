@@ -29,7 +29,7 @@
         <div class="about-us-title-box-bottom">
           <div class="about-us-title-box-bottom-top">投资组合</div>
           <div class="about-us-title-box-bottom-middle">感图科技</div>
-          <div class="about-us-title-box-bottom-bottom">基于深度学习的计算机视觉技术和大数据技术为核心，其软硬件一体的AI产线缺陷智能识别解决方案</div>
+          <div class="about-us-title-box-bottom-bottom">感图科技是软硬件一体的 AI 产线缺陷智能识别解决方案的提供商</div>
         </div>
       </div>
     </div>

@@ -29,7 +29,7 @@
         <div class="about-us-title-box-bottom">
           <div class="about-us-title-box-bottom-top">投资组合</div>
           <div class="about-us-title-box-bottom-middle">爱乐达</div>
-          <div class="about-us-title-box-bottom-bottom">公司主要为飞机提供零部件制造</div>
+          <div class="about-us-title-box-bottom-bottom">致力于民用飞机零件、军用飞机零件制造。</div>
         </div>
       </div>
     </div>

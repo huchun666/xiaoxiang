@@ -29,7 +29,7 @@
         <div class="about-us-title-box-bottom">
           <div class="about-us-title-box-bottom-top">投资组合</div>
           <div class="about-us-title-box-bottom-middle">东芯半导体</div>
-          <div class="about-us-title-box-bottom-bottom">目前国内唯一可以同时提供NAND</div>
+          <div class="about-us-title-box-bottom-bottom">东芯半导体是目前国内唯一可以同时提供 NAND/NOR/DRAM 设计工艺和产品方案的本土存储芯片研发设计公司。</div>
         </div>
       </div>
     </div>

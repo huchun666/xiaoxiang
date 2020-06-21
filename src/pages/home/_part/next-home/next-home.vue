@@ -59,7 +59,7 @@
                 <img src="../../../../assets/images/swiper9.jpg" alt class="swiper-img" @click="handleKnowMore" />
               </el-carousel-item>
             </el-carousel>
-            <div class="line-text">小橡成长，大象无形</div>
+            <div class="line-text">小橡成长大象无形</div>
           </div>
         </div>
         <div class="change-index-box">
