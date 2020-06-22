@@ -56,7 +56,7 @@
           <div class="about-us-content-text-top">
             <img src="../../assets/images/investmentDetail/type1/10.png" alt="">
             <div class="about-us-content-text-top-webside">
-              <a target="_blank" href="http://www.dosilicon.com/">www.dosilicon.com/</a>
+              <a target="_blank" href="http://www.dosilicon.com/">www.dosilicon.com</a>
             </div>
           </div>
           <div class="about-us-content-text-bottom">
