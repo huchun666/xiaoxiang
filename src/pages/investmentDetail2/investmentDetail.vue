@@ -60,7 +60,7 @@
             </div>
           </div>
           <div class="about-us-content-text-bottom">
-            <div class="about-us-content-text-bottom-text">思泉新材是一家专注于功能性高分子材料研发、生产、销售的国家高新技术企业。思泉新材的产品涵盖导热材料、PCB板防护材料等业务领域，具备服务于军用、通讯、消费电子、机械制造、手持终端等行业的产品优势，持续为客户提供有竞争力的导热、防水全面解决方案。思泉新材2020年3月IPO工作已启动。</div>
+            <div class="about-us-content-text-bottom-text">思泉新材是一家专注于功能性高分子材料研发、生产、销售的国家高新技术企业。思泉新材的产品涵盖导热材料、PCB板防护材料等业务领域，具备服务于军用、通讯、消费电子、机械制造、手持终端等行业的产品优势，持续为客户提供有竞争力的导热、防水全面解决方案。</div>
           </div>
         </div>
         <div class="investment-after" id="navigate2">

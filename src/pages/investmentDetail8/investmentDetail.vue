@@ -55,6 +55,11 @@
           </div>
           <div class="about-us-content-text-bottom">
             <div class="about-us-content-text-bottom-text">从事水体生态修复与水污染治理的高新技术企业，其中国原创的“以食藻虫引导水下生态修复专利技术”属世界首创，可构建水下生态修复系统。公司在国内相关细分行业排名第一。</div>
+            <div class="about-us-content-text-bottom-img-ths">
+              <img src="../../assets/images/ths01.jpg" alt="">
+              <img src="../../assets/images/ths02.jpg" alt="">
+              <img src="../../assets/images/ths03.jpg" alt="">
+            </div>
           </div>
         </div>
         <div class="investment-after" id="navigate2">
