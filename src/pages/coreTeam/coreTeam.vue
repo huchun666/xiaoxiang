@@ -7,22 +7,18 @@
         <div class="about-us-title-box-top" :class="{'about-us-title-box-top-active': isShowTop}">
           <img class="main-logo" src="../../assets/icons/icon-logo-white.png" alt @click="handleGoHome" v-show="!isShowTop"/>
           <img class="main-logo" src="../../assets/images/main-logo.png" alt @click="handleGoHome" v-show="isShowTop"/>
-          <div class="icon-meau-parent2" @click="handleSwitch" v-show="!isShowTop">
-            <span>菜单</span>
-            <img
-              class="icon-meau"
-              src="../../assets/icons/icon-meau-white.png"
-              alt
-            />
-          </div>
-          <div class="icon-meau-parent" @click="handleSwitch" v-show="isShowTop">
-            <span>菜单</span>
-            <img
-              class="icon-meau"
-              src="../../assets/icons/icon-meau.png"
-              alt
-            />
-          </div>
+          <img
+            class="icon-meau"
+            src="../../assets/icons/icon-meau-white.png"
+            alt
+            @click="handleSwitch" v-show="!isShowTop"
+          />
+          <img
+            class="icon-meau"
+            src="../../assets/icons/icon-meau.png"
+            alt
+            @click="handleSwitch" v-show="isShowTop"
+          />
           <transition name="fade">
             <w-alert v-if="isShowAlert" @hiddenMeau="handleSwitch"></w-alert>
           </transition>

@@ -1,10 +1,7 @@
 <template>
     <div class='w-title'>
         <img class="main-logo" src="../../assets/images/main-logo.png" alt="" @click="handleGoHome">
-        <div class="icon-meau-parent" @click="handleSwitch">
-            <span>菜单</span>
-            <img class="icon-meau" src="../../assets/icons/icon-meau.png" alt="">
-        </div>
+        <img class="icon-meau" src="../../assets/icons/icon-meau.png" alt="" @click="handleSwitch">
         <transition name="fade">
             <w-alert v-if="isShowAlert" @hiddenMeau="handleSwitch"></w-alert>
         </transition>
@@ -54,18 +51,10 @@ export default {
         height: 100%;
         width: 280px;
     }
-    .icon-meau-parent {
-        display: flex;
-        align-items: center;
-        cursor: pointer;
-        span {
-            margin-right: -20px;
-            font-size: 14px;
-        }
-    }
     .icon-meau {
         width: 96px;
         height: 96px;
+        cursor: pointer;
     }
 }
 .fade-enter-active,
