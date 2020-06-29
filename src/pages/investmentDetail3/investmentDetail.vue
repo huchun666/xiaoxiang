@@ -67,7 +67,6 @@
             <img src="../../assets/images/investmentDetail/type3/3.jpg" alt />
             <img src="../../assets/images/investmentDetail/type3/4.jpg" alt />
             <img src="../../assets/images/investmentDetail/type3/5.jpg" alt />
-            <img src="../../assets/images/investmentDetail/type3/6.jpg" alt />
             <img src="../../assets/images/investmentDetail/type3/7.jpg" alt />
           </div>
           <div class="back-investment">

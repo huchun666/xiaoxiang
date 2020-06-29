@@ -179,7 +179,7 @@ export default {
       var text = "";
       switch (index) {
         case 1:
-          text = "东芯半导体是目前国内领先的可以同时提供 NAND/NOR/DRAM 设计工艺和产品方案的本土存储芯片研发设计公司。";
+          text = "东芯半导体是目前国内领先的可以同时提供 NAND/NOR/DRAM 设计工艺和产品方案的本土存储芯片研发设计公司";
           break;
         case 2:
           text = "思泉新材是一家专注于功能性高分子材料研发、生产、销售的国家高新技术企业";
