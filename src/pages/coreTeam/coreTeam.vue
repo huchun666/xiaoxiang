@@ -55,7 +55,7 @@
             <span class="manager-person-name">喻菁华</span>
             <span class="manager-person-nick">创始管理合伙人</span>
           </div>
-          <div class="manager-person-sub-title">“欣赏敢为天下先，看准赛道全力奔跑的硬核团队，一起干！”</div>
+          <div class="manager-person-sub-title">“欣赏敢为天下先，奋力奔跑的团队、有硬核的标的”</div>
           <ul class="manager-person-list">
             <li>上海巿政府引进高级金融人才、上海市政府公派中长期出国访问学者，曾任深圳发展银行上海分行副行长，上海闵行上银村镇银行董事行长，辽宁振兴银行董事行长</li>
             <li>科技金融服务的探索者与先行者，曾开创“汽车供应链金融模式”；服务上海张江等十几家科技园区中小微科技企业，开展“银园合作“、“投贷联动”、“债权+期权“，科技企业兼并重组，担任“创业导师”等，获得上海市政府金融创新多项成果奖</li>
