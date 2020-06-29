@@ -25,7 +25,7 @@
         <div class="about-us-title-box-bottom">
           <div class="about-us-title-box-bottom-top">投资组合</div>
           <div class="about-us-title-box-bottom-middle">芯原</div>
-          <div class="about-us-title-box-bottom-bottom">芯原是一家依托自主半导体 IP，为客户提供平台化、全方位、一站式芯片定制服务和半导体 IP 授权服务的企业。</div>
+          <div class="about-us-title-box-bottom-bottom">芯原是一家依托自主半导体 IP，为客户提供平台化、全方位、一站式芯片定制服务和半导体 IP 授权服务的企业</div>
         </div>
       </div>
     </div>
